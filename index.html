@@ -3,11 +3,178 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/input.css" />
-    <link rel="stylesheet" href="./src/output.css" />
+    <!-- * tailwindcss -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- * favicon -->
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="./public/favicon/icons8-spotify-windows-11-color-16.png"
+    />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="./public/favicon/icons8-spotify-windows-11-color-32.png"
+    />
+    <link
+      type="image/png"
+      sizes="96x96"
+      rel="icon"
+      href="./public/favicon/icons8-spotify-windows-11-color-96.png"
+    />
+    <link
+      type="image/png"
+      sizes="120x120"
+      rel="icon"
+      href="./public/favicon/icons8-spotify-windows-11-color-120.png"
+    />
+    <meta
+      name="msapplication-square70x70logo"
+      content="./public/favicon/icons8-spotify-windows-11-color-70.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="./public/favicon/icons8-spotify-windows-11-color-144.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="./public/favicon/icons8-spotify-windows-11-color-150.png"
+    />
+    <meta
+      name="msapplication-square310x310logo"
+      content="./public/favicon/icons8-spotify-windows-11-color-310.png"
+    />
+    <title>Spotify</title>
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline text-red-200">Hello world!</h1>
+    <header class="w-full h-full items-center">
+      <nav
+        class="w-full h-[64px] items-center flex bg-gray-800 justify-between px-[8px]"
+      >
+        <!-- * logo -->
+        <a href="#">
+          <img
+            src="./public/assets/icons8-spotify-100.png"
+            alt="logo-home"
+            class="w-[64px]"
+          />
+        </a>
+
+        <!-- * form -->
+        <div class="flex items-center">
+          <!-- * home -->
+          <div class="bg-gray-700 rounded-full h-[30px] relative group">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="30"
+              height="30"
+              viewBox="0,0,256,256"
+              class="p-[4px] cursor-pointer group-hover:scale-110 duration-500"
+            >
+              <g fill="#989FB9">
+                <g transform="scale(5.33333,5.33333)">
+                  <path
+                    d="M23.95117,4c-0.31984,0.01092 -0.62781,0.12384 -0.87891,0.32227l-14.21289,11.19727c-1.8039,1.42163 -2.85937,3.59398 -2.85937,5.89063v19.08984c0,1.36359 1.13641,2.5 2.5,2.5h10c1.36359,0 2.5,-1.13641 2.5,-2.5v-10c0,-0.29504 0.20496,-0.5 0.5,-0.5h5c0.29504,0 0.5,0.20496 0.5,0.5v10c0,1.36359 1.13641,2.5 2.5,2.5h10c1.36359,0 2.5,-1.13641 2.5,-2.5v-19.08984c0,-2.29665 -1.05548,-4.46899 -2.85937,-5.89062l-14.21289,-11.19727c-0.27738,-0.21912 -0.62324,-0.33326 -0.97656,-0.32227zM24,7.41016l13.28516,10.4668c1.0841,0.85437 1.71484,2.15385 1.71484,3.5332v18.58984h-9v-9.5c0,-1.91495 -1.58505,-3.5 -3.5,-3.5h-5c-1.91495,0 -3.5,1.58505 -3.5,3.5v9.5h-9v-18.58984c0,-1.37935 0.63074,-2.67883 1.71484,-3.5332z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <span
+              class="opacity-0 group-hover:opacity-80 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 ease-in-out absolute text-white bg-gray-700 rounded p-[3px] pt-[1px] mt-[5px] translate-x-[-7px] text-sm"
+              >Home</span
+            >
+          </div>
+
+          <form
+            role="search"
+            class="w-full flex items-center bg-gray-700 rounded-full ml-[5px] h-[30px] pr-[20px]"
+          >
+            <!-- * search -->
+            <div class="relative group">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="26"
+                height="26"
+                viewBox="0,0,256,256"
+                class="w-full ml-[2px] p-[2px] mr-[10px] cursor-pointer group"
+              >
+                <g fill="#989FB9" class="group-hover:fill-white">
+                  <g transform="scale(8.53333,8.53333)">
+                    <path
+                      d="M13,3c-5.511,0 -10,4.489 -10,10c0,5.511 4.489,10 10,10c2.39651,0 4.59738,-0.85101 6.32227,-2.26367l5.9707,5.9707c0.25082,0.26124 0.62327,0.36648 0.97371,0.27512c0.35044,-0.09136 0.62411,-0.36503 0.71547,-0.71547c0.09136,-0.35044 -0.01388,-0.72289 -0.27512,-0.97371l-5.9707,-5.9707c1.41266,-1.72488 2.26367,-3.92576 2.26367,-6.32227c0,-5.511 -4.489,-10 -10,-10zM13,5c4.43012,0 8,3.56988 8,8c0,4.43012 -3.56988,8 -8,8c-4.43012,0 -8,-3.56988 -8,-8c0,-4.43012 3.56988,-8 8,-8z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <span
+                class="opacity-0 group-hover:opacity-80 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 ease-in-out absolute text-white bg-gray-700 rounded p-[3px] pt-[1px] mt-[7px] translate-x-[-7px] text-sm"
+                >Search</span
+              >
+            </div>
+            <input
+              type="text"
+              placeholder="What do you want to play?"
+              class="w-full placeholder:text-[#989FB9] text-white text-sm focus:outline-none active:text-white"
+            />
+          </form>
+        </div>
+
+        <div class="flex items-center">
+          <!-- * noti -->
+          <div class="bg-gray-700 rounded-full h-[30px] relative group">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="30"
+              height="30"
+              viewBox="0,0,256,256"
+              class="p-[5px] cursor-pointer group-hover:scale-110 duration-500"
+            >
+              <g fill="#989FB9">
+                <g transform="scale(5.33333,5.33333)">
+                  <path
+                    d="M23.27734,4.01758c-8.08348,0.38074 -14.27734,7.32581 -14.27734,15.36328v7.26758l-2.65039,5.33203c-0.00466,0.00972 -0.00922,0.01948 -0.01367,0.0293c-1.06626,2.2675 0.65977,4.99023 3.16602,4.99023h8.49805c0,3.29586 2.70414,6 6,6c3.29586,0 6,-2.70414 6,-6h8.49609c2.50624,0 4.23449,-2.72217 3.16797,-4.99023c-0.00445,-0.00981 -0.00901,-0.01958 -0.01367,-0.0293l-2.65039,-5.33203v-7.64844c0,-8.5062 -7.13671,-15.38664 -15.72266,-14.98242zM23.41797,7.01367c6.92006,-0.32579 12.58203,5.14853 12.58203,11.98633v8c-0.00021,0.23174 0.05327,0.46037 0.15625,0.66797l2.79297,5.62109c0.17961,0.38495 -0.0282,0.71094 -0.45312,0.71094h-28.99414c-0.42493,0 -0.63105,-0.32543 -0.45117,-0.71094v-0.00195l2.79297,-5.61914c0.10298,-0.2076 0.15646,-0.43623 0.15625,-0.66797v-7.61914c0,-6.50053 4.97945,-12.06393 11.41797,-12.36719zM21,37h6c0,1.67413 -1.32587,3 -3,3c-1.67413,0 -3,-1.32587 -3,-3z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <span
+              class="opacity-0 group-hover:opacity-80 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 ease-in-out absolute text-white bg-gray-700 rounded p-[3px] pt-[1px] mt-[5px] translate-x-[-19px] text-xs"
+              >Notification</span
+            >
+          </div>
+
+          <!-- * user -->
+          <div
+            class="bg-gray-700 rounded-full h-[30px] w-[30px] flex flex-col items-center ml-[5px] relative group"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              fill="#989FB9"
+              class="bi bi-person p-[2px] group-hover:scale-110 duration-500"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+              />
+            </svg>
+            <span
+              class="opacity-0 group-hover:opacity-80 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 ease-in-out absolute text-white bg-gray-700 rounded p-[3px] pt-[1px] mt-[35px] text-xs"
+              >User</span
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
