@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- * tailwindcss -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- * style -->
+    <link rel="stylesheet" href="../CSS/style.css" />
+
+    <!-- * favicon -->
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="../public/favicon/icons8-spotify-windows-11-color-16.png"
+    />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="../public/favicon/icons8-spotify-windows-11-color-32.png"
+    />
+    <link
+      type="image/png"
+      sizes="96x96"
+      rel="icon"
+      href="../public/favicon/icons8-spotify-windows-11-color-96.png"
+    />
+    <link
+      type="image/png"
+      sizes="120x120"
+      rel="icon"
+      href="../public/favicon/icons8-spotify-windows-11-color-120.png"
+    />
+    <meta
+      name="msapplication-square70x70logo"
+      content="../public/favicon/icons8-spotify-windows-11-color-70.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="../public/favicon/icons8-spotify-windows-11-color-144.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="../public/favicon/icons8-spotify-windows-11-color-150.png"
+    />
+    <meta
+      name="msapplication-square310x310logo"
+      content="../public/favicon/icons8-spotify-windows-11-color-310.png"
+    />
+    <title>Spotify</title>
+  </head>
+  <body>
+    <header class="w-full h-full items-center">
+      <nav
+        class="w-full h-[64px] items-center flex bg-gray-800 justify-between px-[8px]"
+      >
+        <!-- * logo -->
+        <a href="#">
+          <svg
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            viewBox="0 0 24 24"
+            class="e-9541-logo e-9541-baseline ml-[18px]"
+            aria-label="Spotify"
+            aria-hidden="false"
+            data-encore-id="logoSpotify"
+            style="--encore-logo-fill-color: var(--decorative-base)"
+            height="29"
+            width="29"
+          >
+            <title stroke-opacity="0" stroke="#000000" fill="#FFFFFF">
+              Spotify
+            </title>
+            <path
+              d="M13.427.01C6.805-.253 1.224 4.902.961 11.524.698 18.147 5.853 23.728 12.476 23.99c6.622.263 12.203-4.892 12.466-11.514S20.049.272 13.427.01m5.066 17.579a.717.717 0 0 1-.977.268 14.4 14.4 0 0 0-5.138-1.747 14.4 14.4 0 0 0-5.42.263.717.717 0 0 1-.338-1.392c1.95-.474 3.955-.571 5.958-.29 2.003.282 3.903.928 5.647 1.92a.717.717 0 0 1 .268.978m1.577-3.15a.93.93 0 0 1-1.262.376 17.7 17.7 0 0 0-5.972-1.96 17.7 17.7 0 0 0-6.281.238.93.93 0 0 1-1.11-.71.93.93 0 0 1 .71-1.11 19.5 19.5 0 0 1 6.94-.262 19.5 19.5 0 0 1 6.599 2.165c.452.245.62.81.376 1.263m1.748-3.551a1.147 1.147 0 0 1-1.546.488 21.4 21.4 0 0 0-6.918-2.208 21.4 21.4 0 0 0-7.259.215 1.146 1.146 0 0 1-.456-2.246 23.7 23.7 0 0 1 8.034-.24 23.7 23.7 0 0 1 7.657 2.445c.561.292.78.984.488 1.546m13.612-.036-.832-.247c-1.67-.495-2.14-.681-2.14-1.353 0-.637.708-1.327 2.264-1.327 1.539 0 2.839.752 3.51 1.31.116.096.24.052.24-.098V6.935c0-.097-.027-.15-.098-.203-.83-.62-2.272-1.07-3.723-1.07-2.953 0-4.722 1.68-4.722 3.59 0 2.157 1.371 2.91 3.626 3.546l.973.274c1.689.478 1.998.902 1.998 1.556 0 1.097-.831 1.433-2.07 1.433-1.556 0-3.457-.911-4.35-2.025-.08-.098-.177-.053-.177.062v2.423c0 .097.01.141.08.22.743.814 2.52 1.53 4.59 1.53 2.546 0 4.456-1.485 4.456-3.784 0-1.787-1.052-2.865-3.625-3.635m10.107-1.76c-1.68 0-2.653 1.026-3.219 2.052V9.376c0-.08-.044-.124-.124-.124h-2.22c-.079 0-.123.044-.123.124V20.72c0 .08.044.124.124.124h2.22c.079 0 .123-.044.123-.124v-4.536c.566 1.025 1.521 2.034 3.237 2.034 2.264 0 3.89-1.955 3.89-4.581s-1.644-4.545-3.908-4.545m-.654 6.986c-1.185 0-2.211-1.167-2.618-2.458.407-1.362 1.344-2.405 2.618-2.405 1.211 0 2.051.92 2.051 2.423s-.84 2.44-2.051 2.44m40.633-6.826h-2.264c-.08 0-.115.017-.15.097l-2.282 5.483-2.29-5.483c-.035-.08-.07-.097-.15-.097h-3.661v-.584c0-.955.645-1.397 1.476-1.397.496 0 1.035.256 1.415.486.089.053.15-.008.115-.088l-.796-1.901a.26.26 0 0 0-.124-.133c-.389-.203-1.025-.38-1.644-.38-1.875 0-2.954 1.432-2.954 3.254v.743h-1.503c-.08 0-.124.044-.124.124v1.768c0 .08.044.124.124.124h1.503v6.668c0 .08.044.123.124.123h2.264c.08 0 .124-.044.124-.123v-6.668h1.936l2.812 6.11-1.512 3.325c-.044.098.009.142.097.142h2.414c.08 0 .116-.018.15-.097l4.997-11.355c.035-.08-.009-.141-.097-.141M54.964 9.04c-2.865 0-4.837 2.025-4.837 4.616 0 2.573 1.971 4.616 4.837 4.616 2.856 0 4.846-2.043 4.846-4.616 0-2.591-1.99-4.616-4.846-4.616m.008 7.065c-1.37 0-2.343-1.043-2.343-2.45 0-1.405.973-2.449 2.343-2.449 1.362 0 2.335 1.043 2.335 2.45 0 1.406-.973 2.45-2.335 2.45m33.541-6.334a1.24 1.24 0 0 0-.483-.471 1.4 1.4 0 0 0-.693-.17q-.384 0-.693.17a1.24 1.24 0 0 0-.484.471q-.174.302-.174.681 0 .375.174.677.175.3.484.471t.693.17.693-.17.483-.471.175-.676q0-.38-.175-.682m-.211 1.247a1 1 0 0 1-.394.39 1.15 1.15 0 0 1-.571.14 1.16 1.16 0 0 1-.576-.14 1 1 0 0 1-.391-.39 1.14 1.14 0 0 1-.14-.566q0-.316.14-.562t.391-.388.576-.14q.32 0 .57.14.253.141.395.39t.142.565q0 .312-.142.56m-19.835-5.78c-.85 0-1.468.6-1.468 1.396s.619 1.397 1.468 1.397c.866 0 1.485-.6 1.485-1.397 0-.796-.619-1.397-1.485-1.397m19.329 5.19a.31.31 0 0 0 .134-.262q0-.168-.132-.266-.132-.099-.381-.099h-.588v1.229h.284v-.489h.154l.374.489h.35l-.41-.518a.5.5 0 0 0 .215-.084m-.424-.109h-.26v-.3h.27q.12 0 .184.036a.12.12 0 0 1 .065.116.12.12 0 0 1-.067.111.4.4 0 0 1-.192.037M69.607 9.252h-2.263c-.08 0-.124.044-.124.124v8.56c0 .08.044.123.124.123h2.263c.08 0 .124-.044.124-.123v-8.56c0-.08-.044-.124-.124-.124m-3.333 6.605a2.1 2.1 0 0 1-1.053.257c-.725 0-1.185-.425-1.185-1.362v-3.484h2.211c.08 0 .124-.044.124-.124V9.376c0-.08-.044-.124-.124-.124h-2.21V6.944c0-.097-.063-.15-.15-.08l-3.954 3.113c-.053.044-.07.088-.07.16v1.007c0 .08.044.124.123.124h1.539v3.855c0 2.087 1.203 3.06 2.918 3.06.743 0 1.46-.194 1.884-.442.062-.035.07-.07.07-.133v-1.68c0-.088-.044-.115-.123-.07"
+              transform="translate(-0.95,0)"
+              stroke-opacity="0"
+              stroke="#000000"
+              fill="#FFFFFF"
+            ></path>
+          </svg>
+        </a>
+
+        <!-- * form -->
+        <div class="items-center hidden sm:flex">
+          <!-- * home -->
+          <div class="bg-gray-700 rounded-full h-[30px] relative group">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="29"
+              height="29"
+              viewBox="0,0,256,256"
+              id="need-description"
+              class="need-description p-[5px] cursor-pointer transform group-hover:scale-110 duration-500"
+            >
+              <g fill="#989FB9">
+                <g transform="scale(5.33333,5.33333)">
+                  <path
+                    d="M23.95117,4c-0.31984,0.01092 -0.62781,0.12384 -0.87891,0.32227l-14.21289,11.19727c-1.8039,1.42163 -2.85937,3.59398 -2.85937,5.89063v19.08984c0,1.36359 1.13641,2.5 2.5,2.5h10c1.36359,0 2.5,-1.13641 2.5,-2.5v-10c0,-0.29504 0.20496,-0.5 0.5,-0.5h5c0.29504,0 0.5,0.20496 0.5,0.5v10c0,1.36359 1.13641,2.5 2.5,2.5h10c1.36359,0 2.5,-1.13641 2.5,-2.5v-19.08984c0,-2.29665 -1.05548,-4.46899 -2.85937,-5.89062l-14.21289,-11.19727c-0.27738,-0.21912 -0.62324,-0.33326 -0.97656,-0.32227zM24,7.41016l13.28516,10.4668c1.0841,0.85437 1.71484,2.15385 1.71484,3.5332v18.58984h-9v-9.5c0,-1.91495 -1.58505,-3.5 -3.5,-3.5h-5c-1.91495,0 -3.5,1.58505 -3.5,3.5v9.5h-9v-18.58984c0,-1.37935 0.63074,-2.67883 1.71484,-3.5332z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <span
+              id="description"
+              class="description hidden opacity-0 transform translate-y-2 transition-all duration-500 ease-in-out absolute text-white bg-gray-700 rounded p-[3px] pt-[1px] mt-[5px] translate-x-[-7px] text-sm"
+              >Home</span
+            >
+          </div>
+
+          <form
+            role="search"
+            class="w-[300px] flex items-center bg-gray-700 rounded-full ml-[5px] h-[30px] hover:bg-gray-600 transition-all duration-600"
+          >
+            <!-- * search -->
+            <div class="relative">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="26"
+                height="26"
+                viewBox="0,0,256,256"
+                class="need-description w-full ml-[2px] p-[2px] mr-[10px] cursor-pointer group"
+              >
+                <g fill="#989FB9" class="group-hover:fill-white">
+                  <g transform="scale(8.53333,8.53333)">
+                    <path
+                      d="M13,3c-5.511,0 -10,4.489 -10,10c0,5.511 4.489,10 10,10c2.39651,0 4.59738,-0.85101 6.32227,-2.26367l5.9707,5.9707c0.25082,0.26124 0.62327,0.36648 0.97371,0.27512c0.35044,-0.09136 0.62411,-0.36503 0.71547,-0.71547c0.09136,-0.35044 -0.01388,-0.72289 -0.27512,-0.97371l-5.9707,-5.9707c1.41266,-1.72488 2.26367,-3.92576 2.26367,-6.32227c0,-5.511 -4.489,-10 -10,-10zM13,5c4.43012,0 8,3.56988 8,8c0,4.43012 -3.56988,8 -8,8c-4.43012,0 -8,-3.56988 -8,-8c0,-4.43012 3.56988,-8 8,-8z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <span
+                class="description hidden opacity-0 transform translate-y-2 transition-all duration-500 ease-in-out absolute text-white bg-gray-700 rounded p-[3px] pt-[1px] mt-[7px] translate-x-[-7px] text-sm"
+                >Search</span
+              >
+            </div>
+            <input
+              type="text"
+              id="input-1"
+              placeholder="What do you want to play?"
+              class="w-[230px] placeholder:text-[#989FB9] text-white text-sm focus:outline-none active:text-white pr-[60px]"
+            />
+
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              data-encore-id="icon"
+              role="img"
+              aria-hidden="true"
+              class="Svg-sc-ytk21e-0 dYnaPI e-9541-icon cursor-pointer hidden"
+              viewBox="0 0 16 16"
+              width="16"
+              height="16"
+              id="clear-x-1"
+            >
+              <path
+                d="M2.47 2.47a.75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06Z"
+                fill-opacity="0.7"
+                fill="#CDD6F4"
+              ></path>
+            </svg>
+          </form>
+        </div>
+
+        <div class="flex items-center">
+          <!-- * noti -->
+          <div
+            class="bg-gray-700 rounded-full h-[30px] ml-[5px] relative group"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="30"
+              height="30"
+              viewBox="0,0,256,256"
+              class="need-description p-[5px] cursor-pointer group-hover:scale-110 duration-500"
+            >
+              <g fill="#989FB9">
+                <g transform="scale(5.33333,5.33333)">
+                  <path
+                    d="M23.27734,4.01758c-8.08348,0.38074 -14.27734,7.32581 -14.27734,15.36328v7.26758l-2.65039,5.33203c-0.00466,0.00972 -0.00922,0.01948 -0.01367,0.0293c-1.06626,2.2675 0.65977,4.99023 3.16602,4.99023h8.49805c0,3.29586 2.70414,6 6,6c3.29586,0 6,-2.70414 6,-6h8.49609c2.50624,0 4.23449,-2.72217 3.16797,-4.99023c-0.00445,-0.00981 -0.00901,-0.01958 -0.01367,-0.0293l-2.65039,-5.33203v-7.64844c0,-8.5062 -7.13671,-15.38664 -15.72266,-14.98242zM23.41797,7.01367c6.92006,-0.32579 12.58203,5.14853 12.58203,11.98633v8c-0.00021,0.23174 0.05327,0.46037 0.15625,0.66797l2.79297,5.62109c0.17961,0.38495 -0.0282,0.71094 -0.45312,0.71094h-28.99414c-0.42493,0 -0.63105,-0.32543 -0.45117,-0.71094v-0.00195l2.79297,-5.61914c0.10298,-0.2076 0.15646,-0.43623 0.15625,-0.66797v-7.61914c0,-6.50053 4.97945,-12.06393 11.41797,-12.36719zM21,37h6c0,1.67413 -1.32587,3 -3,3c-1.67413,0 -3,-1.32587 -3,-3z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <span
+              class="description hidden opacity-0 transform translate-y-2 transition-all duration-500 ease-in-out absolute text-white bg-gray-700 rounded p-[3px] pt-[1px] mt-[5px] translate-x-[-19px] text-xs"
+              >Notification</span
+            >
+          </div>
+
+          <!-- * user -->
+          <div
+            class="bg-gray-700 rounded-full h-[30px] w-[30px] flex flex-col items-center ml-[5px] relative group"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              fill="#989FB9"
+              class="need-description bi bi-person p-[2px] group-hover:scale-110 duration-500"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+              />
+            </svg>
+            <span
+              class="description hidden opacity-0 transform translate-y-2 transition-all duration-500 ease-in-out absolute text-white bg-gray-700 rounded p-[3px] pt-[1px] mt-[35px] text-xs"
+              >User</span
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <article class="w-full bg-gray-800">
+      <div class="grid grid-cols-[1fr_2fr_1fr] h-[1000px] w-full px-[8px]">
+        <!-- ? aside -->
+        <div class="h-full bg-gray-900 px-[8px]">
+          <!-- * header -->
+          <div
+            class="w-full px-[8px] pt-[16px] pb-[8px] flex items-center justify-between"
+          >
+            <div class="flex items-center cursor-pointer group">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                data-encore-id="icon"
+                role="img"
+                aria-hidden="true"
+                class="Svg-sc-ytk21e-0 bneLcE e-9541-icon"
+                viewBox="0 0 24 24"
+                width="26"
+                height="26"
+              >
+                <path
+                  d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"
+                  fill-opacity="1"
+                  fill="#CDD6F4"
+                  class="group-hover:fill-white hover:opacity-100"
+                ></path>
+              </svg>
+              <span
+                class="text-[#CDD6F4] font-bold text-md ml-[10px] group-hover:text-white"
+              >
+                Your Library
+              </span>
+            </div>
+
+            <!-- * plus -->
+            <div>
+              <!-- * plus svg -->
+              <div id="plus-svg" class="need-description">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  class="cursor-pointer relative"
+                >
+                  <path
+                    fill="#CDD6F4"
+                    class="group-hover:fill-white"
+                    fill-rule="evenodd"
+                    d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z"
+                  ></path>
+                </svg>
+                <span
+                  id="plus-description"
+                  class="description hidden opacity-0 transform translate-y-2 transition-all duration-500 ease-in-out absolute text-white bg-gray-700 rounded p-[3px] pt-[1px] mt-[-52px] translate-x-[-65px] text-sm"
+                  >Create playlist or folder</span
+                >
+              </div>
+
+              <div
+                id="plus-windows"
+                class="hidden absolute translate-x-[-165px] translate-y-[10px] text-sm text-gray-300 bg-gray-800 rounded"
+              >
+                <ul class="p-[4px]">
+                  <li>
+                    <button
+                      class="w-full flex items-center py-[10px] pr-[8px] pl-[10px] rounded hover:bg-gray-700"
+                    >
+                      <svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="Svg-sc-ytk21e-0 dYnaPI e-9541-icon"
+                        viewBox="0 0 16 16"
+                        width="16"
+                        height="16"
+                      >
+                        <path
+                          d="M2 0v2H0v1.5h2v2h1.5v-2h2V2h-2V0H2zm11.5 2.5H8.244A5.482 5.482 0 0 0 7.966 1H15v11.75A2.75 2.75 0 1 1 12.25 10h1.25V2.5zm0 9h-1.25a1.25 1.25 0 1 0 1.25 1.25V11.5zM4 8.107a5.465 5.465 0 0 0 1.5-.593v5.236A2.75 2.75 0 1 1 2.75 10H4V8.107zM4 11.5H2.75A1.25 1.25 0 1 0 4 12.75V11.5z"
+                          fill-opacity="0.9"
+                          fill="#FFFFFF"
+                          class="fill-gray-300"
+                        ></path>
+                      </svg>
+                      <span class="ml-[12px]" data-encore-id="type"
+                        >Create a new playlist</span
+                      >
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="w-full flex items-center py-[10px] pr-[8px] pl-[10px] rounded hover:bg-gray-700"
+                    >
+                      <svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="Svg-sc-ytk21e-0 dYnaPI e-9541-icon"
+                        viewBox="0 0 16 16"
+                        width="16"
+                        height="16"
+                      >
+                        <path
+                          d="M1.75 1A1.75 1.75 0 0 0 0 2.75v11.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0 0 16 14.25v-9.5A1.75 1.75 0 0 0 14.25 3H7.82l-.65-1.125A1.75 1.75 0 0 0 5.655 1H1.75zM1.5 2.75a.25.25 0 0 1 .25-.25h3.905a.25.25 0 0 1 .216.125L6.954 4.5h7.296a.25.25 0 0 1 .25.25v9.5a.25.25 0 0 1-.25.25H1.75a.25.25 0 0 1-.25-.25V2.75z"
+                          fill-opacity="0.9"
+                          fill="#FFFFFF"
+                          class="fill-gray-300"
+                        ></path>
+                      </svg>
+                      <span class="ml-[12px]" data-encore-id="type"
+                        >Create a playlist folder</span
+                      >
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- * content -->
+          <div>
+            <ul class="text-[#CDD6F4] text-sm flex items-center py-[8px]">
+              <li class="list-content">Playlists</li>
+              <li class="list-content">Artists</li>
+              <li class="list-content">Albums</li>
+            </ul>
+          </div>
+
+          <!-- * search and recents -->
+          <div class="w-full flex items-center py-[8px]">
+            <!-- * search -->
+            <div class="need-description group flex items-center">
+              <svg
+                id="search-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="30"
+                height="30"
+                viewBox="0,0,256,256"
+                class="p-[5px] cursor-pointer rounded-full group-hover:bg-gray-800"
+              >
+                <g fill="#989FB9" class="group-hover:fill-white">
+                  <g transform="scale(8.53333,8.53333)">
+                    <path
+                      d="M13,3c-5.511,0 -10,4.489 -10,10c0,5.511 4.489,10 10,10c2.39651,0 4.59738,-0.85101 6.32227,-2.26367l5.9707,5.9707c0.25082,0.26124 0.62327,0.36648 0.97371,0.27512c0.35044,-0.09136 0.62411,-0.36503 0.71547,-0.71547c0.09136,-0.35044 -0.01388,-0.72289 -0.27512,-0.97371l-5.9707,-5.9707c1.41266,-1.72488 2.26367,-3.92576 2.26367,-6.32227c0,-5.511 -4.489,-10 -10,-10zM13,5c4.43012,0 8,3.56988 8,8c0,4.43012 -3.56988,8 -8,8c-4.43012,0 -8,-3.56988 -8,-8c0,-4.43012 3.56988,-8 8,-8z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <span
+                class="description hidden opacity-0 transform translate-y-2 transition-all duration-500 ease-in-out absolute text-white bg-gray-700 rounded p-[3px] pt-[1px] mt-[-60px] text-sm"
+                >Search in Your Library</span
+              >
+            </div>
+
+            <!-- * search input-->
+            <div
+              id="search-input"
+              class="hidden opacity-0 w-[2px] flex items-center bg-gray-800 rounded transition-all duration-600 ease-in-out"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="30"
+                height="30"
+                viewBox="0,0,256,256"
+                class="p-[4px] ml-[1px]"
+              >
+                <g fill="#989FB9">
+                  <g transform="scale(8.53333,8.53333)">
+                    <path
+                      d="M13,3c-5.511,0 -10,4.489 -10,10c0,5.511 4.489,10 10,10c2.39651,0 4.59738,-0.85101 6.32227,-2.26367l5.9707,5.9707c0.25082,0.26124 0.62327,0.36648 0.97371,0.27512c0.35044,-0.09136 0.62411,-0.36503 0.71547,-0.71547c0.09136,-0.35044 -0.01388,-0.72289 -0.27512,-0.97371l-5.9707,-5.9707c1.41266,-1.72488 2.26367,-3.92576 2.26367,-6.32227c0,-5.511 -4.489,-10 -10,-10zM13,5c4.43012,0 8,3.56988 8,8c0,4.43012 -3.56988,8 -8,8c-4.43012,0 -8,-3.56988 -8,-8c0,-4.43012 3.56988,-8 8,-8z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <input
+                type="text"
+                placeholder="Search in Your Library"
+                maxlength="80"
+                id="input-2"
+                class="w-full text-xs pb-[2px] pl-[2px] text-gray-100 focus:outline-none relative"
+              />
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                data-encore-id="icon"
+                role="img"
+                aria-hidden="true"
+                class="Svg-sc-ytk21e-0 dYnaPI e-9541-icon cursor-pointer absolute ml-[160px] hidden"
+                viewBox="0 0 16 16"
+                width="14"
+                height="14"
+                id="clear-x-2"
+              >
+                <path
+                  d="M2.47 2.47a.75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06Z"
+                  fill-opacity="0.7"
+                  fill="#CDD6F4"
+                ></path>
+              </svg>
+            </div>
+
+            <!-- * recents -->
+            <div class="ml-auto">
+              <button
+                class="flex items-center py-[4px] pr-[12px] pl-[16px] cursor-pointer group rounded-full hover:scale-105 transition-all duration-300"
+              >
+                <span
+                  id="search-recents"
+                  class="text-sm text-[#989FB9] group-hover:text-[#CDD6F4]"
+                  >Recents</span
+                >
+                <span class="pl-[5px]">
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-encore-id="icon"
+                    role="img"
+                    aria-hidden="true"
+                    class="Svg-sc-ytk21e-0 cAMMLk e-9541-icon"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    height="16"
+                  >
+                    <path
+                      d="M15 14.5H5V13h10v1.5zm0-5.75H5v-1.5h10v1.5zM15 3H5V1.5h10V3zM3 3H1V1.5h2V3zm0 11.5H1V13h2v1.5zm0-5.75H1v-1.5h2v1.5z"
+                      fill-opacity="1"
+                      fill="#989FB9"
+                      class="group-hover:fill-[#CDD6F4]"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- * main -->
+        <div class="h-full bg-blue-700"></div>
+        <div class="h-full bg-green-700"></div>
+      </div>
+    </article>
+
+    <script src="./JS/search-input.js"></script>
+    <script src="./JS/description.js"></script>
+    <script src="./JS/clear-search.js"></script>
+    <script src="./JS/plus.js"></script>
+  </body>
+</html>

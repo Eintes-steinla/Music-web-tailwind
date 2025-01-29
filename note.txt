@@ -5,3 +5,8 @@ fill 2 #CDD6F4
     class="description hidden opacity-0 transform translate-y-2 transition-all duration-500 ease-in-out absolute text-white bg-gray-700 rounded p-[3px] pt-[1px] mt-[-60px] text-sm"
     >Search in Your Library</span
 >
+
+hidden opacity-0 w-[2px] 
+
+
+side bar icon #989FB9

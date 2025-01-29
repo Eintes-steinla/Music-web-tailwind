@@ -1,7 +1,10 @@
 const searchIcon = document.getElementById("search-icon");
 const searchInput = document.getElementById("search-input");
+const searchRecents = document.getElementById("search-recents");
 
 function showInput() {
+  // searchRecents.classList.add("hidden");
+
   searchIcon.classList.add("hidden");
   searchInput.classList.remove("hidden", "opacity-0");
   requestAnimationFrame(() => {
@@ -10,6 +13,8 @@ function showInput() {
 }
 
 function hideInput() {
+  searchRecents.classList.remove("hidden");
+
   searchInput.classList.remove("w-[180px]");
   setTimeout(() => {
     searchInput.classList.add("opacity-100");
