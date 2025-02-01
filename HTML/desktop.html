@@ -53,9 +53,9 @@
     <title>Spotify</title>
   </head>
   <body>
-    <header class="w-full h-full items-center">
+    <header class="items-center w-full h-[64px]">
       <nav
-        class="w-full h-[64px] items-center flex bg-gray-800 justify-between px-[8px]"
+        class="flex justify-between items-center bg-gray-800 px-[8px] w-full h-full"
       >
         <!-- * logo -->
         <a href="#">
@@ -64,7 +64,7 @@
             xmlns="http://www.w3.org/2000/svg"
             role="img"
             viewBox="0 0 24 24"
-            class="e-9541-logo e-9541-baseline ml-[18px]"
+            class="ml-[18px] e-9541-baseline e-9541-logo"
             aria-label="Spotify"
             aria-hidden="false"
             data-encore-id="logoSpotify"
@@ -86,9 +86,9 @@
         </a>
 
         <!-- * form -->
-        <div class="items-center hidden sm:flex">
+        <div class="sm:flex items-center gap-2 hidden">
           <!-- * home -->
-          <div class="bg-gray-700 rounded-full h-[30px] relative group">
+          <div class="group relative bg-gray-700 rounded-full h-[30px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -97,7 +97,7 @@
               height="29"
               viewBox="0,0,256,256"
               id="need-description"
-              class="need-description p-[5px] cursor-pointer transform group-hover:scale-110 duration-500"
+              class="group-hover:scale-110 p-[5px] transform duration-500 cursor-pointer need-description"
             >
               <g fill="#989FB9">
                 <g transform="scale(5.33333,5.33333)">
@@ -109,14 +109,14 @@
             </svg>
             <span
               id="description"
-              class="description hidden opacity-0 transform translate-y-2 transition-all duration-500 ease-in-out absolute text-white bg-gray-700 rounded p-[3px] pt-[1px] mt-[5px] translate-x-[-7px] text-sm"
+              class="absolute hidden bg-gray-700 opacity-0 mt-[5px] p-[3px] pt-[1px] rounded text-sm text-white transform transition-all translate-x-[-7px] translate-y-2 duration-500 description ease-in-out"
               >Home</span
             >
           </div>
 
           <form
             role="search"
-            class="w-[300px] flex items-center bg-gray-700 rounded-full ml-[5px] h-[30px] hover:bg-gray-600 transition-all duration-600"
+            class="flex items-center bg-gray-700 hover:bg-gray-600 rounded-full w-[300px] h-[30px] transition-all duration-600"
           >
             <!-- * search -->
             <div class="relative">
@@ -127,7 +127,7 @@
                 width="26"
                 height="26"
                 viewBox="0,0,256,256"
-                class="need-description w-full ml-[2px] p-[2px] mr-[10px] cursor-pointer group"
+                class="group mr-[10px] ml-[2px] p-[2px] w-full cursor-pointer need-description"
               >
                 <g fill="#989FB9" class="group-hover:fill-white">
                   <g transform="scale(8.53333,8.53333)">
@@ -138,7 +138,7 @@
                 </g>
               </svg>
               <span
-                class="description hidden opacity-0 transform translate-y-2 transition-all duration-500 ease-in-out absolute text-white bg-gray-700 rounded p-[3px] pt-[1px] mt-[7px] translate-x-[-7px] text-sm"
+                class="absolute hidden bg-gray-700 opacity-0 mt-[7px] p-[3px] pt-[1px] rounded text-sm text-white transform transition-all translate-x-[-7px] translate-y-2 duration-500 description ease-in-out"
                 >Search</span
               >
             </div>
@@ -146,7 +146,7 @@
               type="text"
               id="input-1"
               placeholder="What do you want to play?"
-              class="w-[230px] placeholder:text-[#989FB9] text-white text-sm focus:outline-none active:text-white pr-[60px]"
+              class="pr-[60px] w-[230px] text-sm text-white placeholder:text-[#989FB9] focus:outline-none active:text-white"
             />
 
             <svg
@@ -155,7 +155,7 @@
               data-encore-id="icon"
               role="img"
               aria-hidden="true"
-              class="Svg-sc-ytk21e-0 dYnaPI e-9541-icon cursor-pointer hidden"
+              class="hidden cursor-pointer dYnaPI e-9541-icon Svg-sc-ytk21e-0"
               viewBox="0 0 16 16"
               width="16"
               height="16"
@@ -170,11 +170,9 @@
           </form>
         </div>
 
-        <div class="flex items-center">
+        <div class="flex items-center gap-2">
           <!-- * noti -->
-          <div
-            class="bg-gray-700 rounded-full h-[30px] ml-[5px] relative group"
-          >
+          <div class="group relative bg-gray-700 rounded-full h-[30px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -182,7 +180,7 @@
               width="30"
               height="30"
               viewBox="0,0,256,256"
-              class="need-description p-[5px] cursor-pointer group-hover:scale-110 duration-500"
+              class="group-hover:scale-110 p-[5px] duration-500 cursor-pointer need-description"
             >
               <g fill="#989FB9">
                 <g transform="scale(5.33333,5.33333)">
@@ -193,21 +191,21 @@
               </g>
             </svg>
             <span
-              class="description hidden opacity-0 transform translate-y-2 transition-all duration-500 ease-in-out absolute text-white bg-gray-700 rounded p-[3px] pt-[1px] mt-[5px] translate-x-[-19px] text-xs"
+              class="absolute hidden bg-gray-700 opacity-0 mt-[5px] p-[3px] pt-[1px] rounded text-white text-xs transform transition-all translate-x-[-19px] translate-y-2 duration-500 description ease-in-out"
               >Notification</span
             >
           </div>
 
           <!-- * user -->
           <div
-            class="bg-gray-700 rounded-full h-[30px] w-[30px] flex flex-col items-center ml-[5px] relative group"
+            class="group relative flex flex-col items-center bg-gray-700 rounded-full w-[30px] h-[30px]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="26"
               height="26"
               fill="#989FB9"
-              class="need-description bi bi-person p-[2px] group-hover:scale-110 duration-500"
+              class="group-hover:scale-110 p-[2px] duration-500 bi bi-person need-description"
               viewBox="0 0 16 16"
             >
               <path
@@ -215,7 +213,7 @@
               />
             </svg>
             <span
-              class="description hidden opacity-0 transform translate-y-2 transition-all duration-500 ease-in-out absolute text-white bg-gray-700 rounded p-[3px] pt-[1px] mt-[35px] text-xs"
+              class="absolute hidden bg-gray-700 opacity-0 mt-[35px] p-[3px] pt-[1px] rounded text-white text-xs transform transition-all translate-y-2 duration-500 description ease-in-out"
               >User</span
             >
           </div>
@@ -223,22 +221,22 @@
       </nav>
     </header>
 
-    <article class="w-full bg-gray-800">
-      <div class="grid grid-cols-[1fr_2fr_1fr] h-[1000px] w-full px-[8px]">
+    <article class="bg-gray-800 w-full">
+      <div class="gap-2 grid grid-cols-[1fr_2fr_1fr] px-[8px] w-full h-[90vh]">
         <!-- ? aside -->
-        <div class="h-full bg-gray-900 px-[8px]">
+        <div class="bg-gray-900 px-[8px] h-full overflow-hidden">
           <!-- * header -->
           <div
-            class="w-full px-[8px] pt-[16px] pb-[8px] flex items-center justify-between"
+            class="flex justify-between items-center px-[8px] pt-[16px] pb-[8px] w-full"
           >
-            <div class="flex items-center cursor-pointer group">
+            <div class="group flex items-center gap-3 cursor-pointer">
               <svg
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns="http://www.w3.org/2000/svg"
                 data-encore-id="icon"
                 role="img"
                 aria-hidden="true"
-                class="Svg-sc-ytk21e-0 bneLcE e-9541-icon"
+                class="bneLcE e-9541-icon Svg-sc-ytk21e-0"
                 viewBox="0 0 24 24"
                 width="26"
                 height="26"
@@ -251,7 +249,7 @@
                 ></path>
               </svg>
               <span
-                class="text-[#CDD6F4] font-bold text-md ml-[10px] group-hover:text-white"
+                class="group-hover:text-white font-bold text-[#CDD6F4] text-md"
               >
                 Your Library
               </span>
@@ -268,7 +266,7 @@
                   width="20"
                   height="20"
                   viewBox="0 0 24 24"
-                  class="cursor-pointer relative"
+                  class="relative cursor-pointer"
                 >
                   <path
                     fill="#CDD6F4"
@@ -279,19 +277,19 @@
                 </svg>
                 <span
                   id="plus-description"
-                  class="description hidden opacity-0 transform translate-y-2 transition-all duration-500 ease-in-out absolute text-white bg-gray-700 rounded p-[3px] pt-[1px] mt-[-52px] translate-x-[-65px] text-sm"
+                  class="absolute hidden bg-gray-700 opacity-0 mt-[-52px] p-[3px] pt-[1px] rounded text-sm text-white transform transition-all translate-x-[-65px] translate-y-2 duration-500 description ease-in-out"
                   >Create playlist or folder</span
                 >
               </div>
 
               <div
                 id="plus-windows"
-                class="hidden absolute translate-x-[-165px] translate-y-[10px] text-sm text-gray-300 bg-gray-800 rounded"
+                class="absolute hidden bg-gray-800 rounded text-gray-300 text-sm translate-x-[-165px] translate-y-[10px]"
               >
                 <ul class="p-[4px]">
                   <li>
                     <button
-                      class="w-full flex items-center py-[10px] pr-[8px] pl-[10px] rounded hover:bg-gray-700"
+                      class="flex items-center hover:bg-gray-700 py-[10px] pr-[8px] pl-[10px] rounded w-full"
                     >
                       <svg
                         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -299,7 +297,7 @@
                         data-encore-id="icon"
                         role="img"
                         aria-hidden="true"
-                        class="Svg-sc-ytk21e-0 dYnaPI e-9541-icon"
+                        class="dYnaPI e-9541-icon Svg-sc-ytk21e-0"
                         viewBox="0 0 16 16"
                         width="16"
                         height="16"
@@ -318,7 +316,7 @@
                   </li>
                   <li>
                     <button
-                      class="w-full flex items-center py-[10px] pr-[8px] pl-[10px] rounded hover:bg-gray-700"
+                      class="flex items-center hover:bg-gray-700 py-[10px] pr-[8px] pl-[10px] rounded w-full"
                     >
                       <svg
                         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -326,7 +324,7 @@
                         data-encore-id="icon"
                         role="img"
                         aria-hidden="true"
-                        class="Svg-sc-ytk21e-0 dYnaPI e-9541-icon"
+                        class="dYnaPI e-9541-icon Svg-sc-ytk21e-0"
                         viewBox="0 0 16 16"
                         width="16"
                         height="16"
@@ -349,128 +347,146 @@
           </div>
           <!-- * content -->
           <div>
-            <ul class="text-[#CDD6F4] text-sm flex items-center py-[8px]">
-              <li class="list-content">Playlists</li>
-              <li class="list-content">Artists</li>
-              <li class="list-content">Albums</li>
+            <ul class="flex items-center gap-2 py-[8px] text-[#CDD6F4] text-sm">
+              <li
+                class="bg-[#33333b] hover:bg-[#41414c] px-3 py-1 rounded-full cursor-pointer"
+              >
+                Playlists
+              </li>
+              <li
+                class="bg-[#33333b] hover:bg-[#41414c] px-3 py-1 rounded-full cursor-pointer"
+              >
+                Artists
+              </li>
+              <li
+                class="bg-[#33333b] hover:bg-[#41414c] px-3 py-1 rounded-full cursor-pointer"
+              >
+                Albums
+              </li>
             </ul>
           </div>
 
-          <!-- * search and recents -->
-          <div class="w-full flex items-center py-[8px]">
-            <!-- * search -->
-            <div class="need-description group flex items-center">
-              <svg
-                id="search-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="30"
-                height="30"
-                viewBox="0,0,256,256"
-                class="p-[5px] cursor-pointer rounded-full group-hover:bg-gray-800"
-              >
-                <g fill="#989FB9" class="group-hover:fill-white">
-                  <g transform="scale(8.53333,8.53333)">
-                    <path
-                      d="M13,3c-5.511,0 -10,4.489 -10,10c0,5.511 4.489,10 10,10c2.39651,0 4.59738,-0.85101 6.32227,-2.26367l5.9707,5.9707c0.25082,0.26124 0.62327,0.36648 0.97371,0.27512c0.35044,-0.09136 0.62411,-0.36503 0.71547,-0.71547c0.09136,-0.35044 -0.01388,-0.72289 -0.27512,-0.97371l-5.9707,-5.9707c1.41266,-1.72488 2.26367,-3.92576 2.26367,-6.32227c0,-5.511 -4.489,-10 -10,-10zM13,5c4.43012,0 8,3.56988 8,8c0,4.43012 -3.56988,8 -8,8c-4.43012,0 -8,-3.56988 -8,-8c0,-4.43012 3.56988,-8 8,-8z"
-                    ></path>
-                  </g>
-                </g>
-              </svg>
-              <span
-                class="description hidden opacity-0 transform translate-y-2 transition-all duration-500 ease-in-out absolute text-white bg-gray-700 rounded p-[3px] pt-[1px] mt-[-60px] text-sm"
-                >Search in Your Library</span
-              >
-            </div>
-
-            <!-- * search input-->
-            <div
-              id="search-input"
-              class="hidden opacity-0 w-[2px] flex items-center bg-gray-800 rounded transition-all duration-600 ease-in-out"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="30"
-                height="30"
-                viewBox="0,0,256,256"
-                class="p-[4px] ml-[1px]"
-              >
-                <g fill="#989FB9">
-                  <g transform="scale(8.53333,8.53333)">
-                    <path
-                      d="M13,3c-5.511,0 -10,4.489 -10,10c0,5.511 4.489,10 10,10c2.39651,0 4.59738,-0.85101 6.32227,-2.26367l5.9707,5.9707c0.25082,0.26124 0.62327,0.36648 0.97371,0.27512c0.35044,-0.09136 0.62411,-0.36503 0.71547,-0.71547c0.09136,-0.35044 -0.01388,-0.72289 -0.27512,-0.97371l-5.9707,-5.9707c1.41266,-1.72488 2.26367,-3.92576 2.26367,-6.32227c0,-5.511 -4.489,-10 -10,-10zM13,5c4.43012,0 8,3.56988 8,8c0,4.43012 -3.56988,8 -8,8c-4.43012,0 -8,-3.56988 -8,-8c0,-4.43012 3.56988,-8 8,-8z"
-                    ></path>
-                  </g>
-                </g>
-              </svg>
-              <input
-                type="text"
-                placeholder="Search in Your Library"
-                maxlength="80"
-                id="input-2"
-                class="w-full text-xs pb-[2px] pl-[2px] text-gray-100 focus:outline-none relative"
-              />
-              <svg
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns="http://www.w3.org/2000/svg"
-                data-encore-id="icon"
-                role="img"
-                aria-hidden="true"
-                class="Svg-sc-ytk21e-0 dYnaPI e-9541-icon cursor-pointer absolute ml-[160px] hidden"
-                viewBox="0 0 16 16"
-                width="14"
-                height="14"
-                id="clear-x-2"
-              >
-                <path
-                  d="M2.47 2.47a.75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06Z"
-                  fill-opacity="0.7"
-                  fill="#CDD6F4"
-                ></path>
-              </svg>
-            </div>
-
-            <!-- * recents -->
-            <div class="ml-auto">
-              <button
-                class="flex items-center py-[4px] pr-[12px] pl-[16px] cursor-pointer group rounded-full hover:scale-105 transition-all duration-300"
-              >
-                <span
-                  id="search-recents"
-                  class="text-sm text-[#989FB9] group-hover:text-[#CDD6F4]"
-                  >Recents</span
+          <!-- * overflow col 1 -->
+          <div class="h-full max-h-full overflow-y-auto">
+            <!-- * search and recents -->
+            <div class="flex items-center py-[8px] w-full">
+              <!-- * search -->
+              <div class="group flex items-center need-description">
+                <svg
+                  id="search-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="30"
+                  height="30"
+                  viewBox="0,0,256,256"
+                  class="group-hover:bg-gray-800 p-[5px] rounded-full cursor-pointer"
                 >
-                <span class="pl-[5px]">
-                  <svg
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns="http://www.w3.org/2000/svg"
-                    data-encore-id="icon"
-                    role="img"
-                    aria-hidden="true"
-                    class="Svg-sc-ytk21e-0 cAMMLk e-9541-icon"
-                    viewBox="0 0 16 16"
-                    width="16"
-                    height="16"
+                  <g fill="#989FB9" class="group-hover:fill-white">
+                    <g transform="scale(8.53333,8.53333)">
+                      <path
+                        d="M13,3c-5.511,0 -10,4.489 -10,10c0,5.511 4.489,10 10,10c2.39651,0 4.59738,-0.85101 6.32227,-2.26367l5.9707,5.9707c0.25082,0.26124 0.62327,0.36648 0.97371,0.27512c0.35044,-0.09136 0.62411,-0.36503 0.71547,-0.71547c0.09136,-0.35044 -0.01388,-0.72289 -0.27512,-0.97371l-5.9707,-5.9707c1.41266,-1.72488 2.26367,-3.92576 2.26367,-6.32227c0,-5.511 -4.489,-10 -10,-10zM13,5c4.43012,0 8,3.56988 8,8c0,4.43012 -3.56988,8 -8,8c-4.43012,0 -8,-3.56988 -8,-8c0,-4.43012 3.56988,-8 8,-8z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+                <span
+                  class="absolute hidden bg-gray-700 opacity-0 mt-[-60px] p-[3px] pt-[1px] rounded text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
+                  >Search in Your Library</span
+                >
+              </div>
+
+              <!-- * search input-->
+              <div
+                id="search-input"
+                class="flex items-center bg-gray-800 opacity-0 rounded w-[2px] transition-all duration-600 ease-in-out"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="30"
+                  height="30"
+                  viewBox="0,0,256,256"
+                  class="ml-[1px] p-[4px]"
+                >
+                  <g fill="#989FB9">
+                    <g transform="scale(8.53333,8.53333)">
+                      <path
+                        d="M13,3c-5.511,0 -10,4.489 -10,10c0,5.511 4.489,10 10,10c2.39651,0 4.59738,-0.85101 6.32227,-2.26367l5.9707,5.9707c0.25082,0.26124 0.62327,0.36648 0.97371,0.27512c0.35044,-0.09136 0.62411,-0.36503 0.71547,-0.71547c0.09136,-0.35044 -0.01388,-0.72289 -0.27512,-0.97371l-5.9707,-5.9707c1.41266,-1.72488 2.26367,-3.92576 2.26367,-6.32227c0,-5.511 -4.489,-10 -10,-10zM13,5c4.43012,0 8,3.56988 8,8c0,4.43012 -3.56988,8 -8,8c-4.43012,0 -8,-3.56988 -8,-8c0,-4.43012 3.56988,-8 8,-8z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+                <input
+                  type="text"
+                  placeholder="Search in Your Library"
+                  maxlength="80"
+                  id="input-2"
+                  class="relative pb-[2px] pl-[2px] w-full text-gray-100 text-xs focus:outline-none"
+                />
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-encore-id="icon"
+                  role="img"
+                  aria-hidden="true"
+                  class="absolute hidden ml-[160px] cursor-pointer dYnaPI e-9541-icon Svg-sc-ytk21e-0"
+                  viewBox="0 0 16 16"
+                  width="14"
+                  height="14"
+                  id="clear-x-2"
+                >
+                  <path
+                    d="M2.47 2.47a.75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06Z"
+                    fill-opacity="0.7"
+                    fill="#CDD6F4"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- * recents -->
+              <div class="ml-auto">
+                <button
+                  class="group flex items-center py-[4px] pr-[12px] pl-[16px] rounded-full transition-all duration-300 cursor-pointer hover:scale-105"
+                >
+                  <span
+                    id="search-recents"
+                    class="group-hover:text-[#CDD6F4] text-[#989FB9] text-sm"
+                    >Recents</span
                   >
-                    <path
-                      d="M15 14.5H5V13h10v1.5zm0-5.75H5v-1.5h10v1.5zM15 3H5V1.5h10V3zM3 3H1V1.5h2V3zm0 11.5H1V13h2v1.5zm0-5.75H1v-1.5h2v1.5z"
-                      fill-opacity="1"
-                      fill="#989FB9"
-                      class="group-hover:fill-[#CDD6F4]"
-                    ></path>
-                  </svg>
-                </span>
-              </button>
+                  <span class="pl-[5px]">
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      data-encore-id="icon"
+                      role="img"
+                      aria-hidden="true"
+                      class="cAMMLk e-9541-icon Svg-sc-ytk21e-0"
+                      viewBox="0 0 16 16"
+                      width="16"
+                      height="16"
+                    >
+                      <path
+                        d="M15 14.5H5V13h10v1.5zm0-5.75H5v-1.5h10v1.5zM15 3H5V1.5h10V3zM3 3H1V1.5h2V3zm0 11.5H1V13h2v1.5zm0-5.75H1v-1.5h2v1.5z"
+                        fill-opacity="1"
+                        fill="#989FB9"
+                        class="group-hover:fill-[#CDD6F4]"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
             </div>
+
+            <!-- ? ------- -->
+            <div></div>
           </div>
         </div>
 
         <!-- * main -->
-        <div class="h-full bg-blue-700"></div>
-        <div class="h-full bg-green-700"></div>
+        <div class="bg-blue-700 h-full"></div>
+        <div class="bg-green-700 h-full"></div>
       </div>
     </article>
 
