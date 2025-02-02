@@ -52,7 +52,7 @@
     />
     <title>Spotify</title>
   </head>
-  <body>
+  <body class="w-full min-w-[1000px]">
     <header class="items-center w-full h-[64px]">
       <nav
         class="flex justify-between items-center bg-gray-800 px-[8px] w-full h-full"
@@ -86,7 +86,7 @@
         </a>
 
         <!-- * form -->
-        <div class="sm:flex items-center gap-2 hidden">
+        <div class="flex items-center gap-2">
           <!-- * home -->
           <div class="group relative bg-gray-700 rounded-full h-[30px]">
             <svg
@@ -222,9 +222,9 @@
     </header>
 
     <article class="bg-gray-800 w-full">
-      <div class="gap-2 grid grid-cols-[1fr_2fr_1fr] px-[8px] w-full h-[90vh]">
+      <div class="gap-2 grid grid-cols-[1fr_2fr_1fr] px-[8px] w-full h-full">
         <!-- ? aside -->
-        <div class="bg-gray-900 px-[8px] h-full overflow-hidden">
+        <div class="bg-gray-900 h-full overflow-hidden">
           <!-- * header -->
           <div
             class="flex justify-between items-center px-[8px] pt-[16px] pb-[8px] w-full"
@@ -258,7 +258,7 @@
             <!-- * plus -->
             <div>
               <!-- * plus svg -->
-              <div id="plus-svg" class="need-description">
+              <div id="plus-svg" class="mr-[14px] need-description">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -346,7 +346,7 @@
             </div>
           </div>
           <!-- * content -->
-          <div>
+          <div class="px-[8px]">
             <ul class="flex items-center gap-2 py-[8px] text-[#CDD6F4] text-sm">
               <li
                 class="bg-[#33333b] hover:bg-[#41414c] px-3 py-1 rounded-full cursor-pointer"
@@ -367,7 +367,7 @@
           </div>
 
           <!-- * overflow col 1 -->
-          <div class="h-full max-h-full overflow-y-auto">
+          <div class="custom-scroll pl-[8px] h-full max-h-full overflow-y-auto">
             <!-- * search and recents -->
             <div class="flex items-center py-[8px] w-full">
               <!-- * search -->
@@ -479,8 +479,319 @@
               </div>
             </div>
 
-            <!-- ? ------- -->
-            <div></div>
+            <!-- * artits and albums -->
+            <div class="h-[60vh] l">
+              <ul>
+                <li class="flex items-center gap-2 py-2 cursor-pointer">
+                  <div>
+                    <button
+                      class="flex justify-center items-center bg-gradient-to-br from-indigo-900 via-indigo-400 to-indigo-100 rounded w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="white"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div class="w-full">
+                    <p class="text-[#CDD6F4] text-md">Liked Songs</p>
+                    <div class="flex items-center gap-1">
+                      <span>
+                        <svg
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xmlns="http://www.w3.org/2000/svg"
+                          data-encore-id="icon"
+                          role="img"
+                          aria-hidden="false"
+                          class="bSjNEL cSWBDsMjkH62GXIXo6mQ e-9541-icon Svg-sc-ytk21e-0"
+                          viewBox="0 0 16 16"
+                          width="13"
+                          height="13"
+                        >
+                          <title fill="#1ED78B">Pinned</title>
+                          <path
+                            d="M8.822.797a2.72 2.72 0 0 1 3.847 0l2.534 2.533a2.72 2.72 0 0 1 0 3.848l-3.678 3.678-1.337 4.988-4.486-4.486L1.28 15.78a.75.75 0 0 1-1.06-1.06l4.422-4.422L.156 5.812l4.987-1.337L8.822.797z"
+                            fill="#1ED78B"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span>
+                        <p class="text-[#989FB9] text-sm">
+                          Playlist • 260 songs
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="flex items-center gap-2 py-2 cursor-pointer">
+                  <div>
+                    <button
+                      class="flex justify-center items-center rounded-full w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <img
+                        class="rounded-full"
+                        src="../public/assets/XXXTENTACION/xxxtentacion-avatar.jpg"
+                        alt="xxxtentacion-avatar"
+                      />
+                    </button>
+                  </div>
+
+                  <div class="w-full">
+                    <p class="text-[#CDD6F4] text-md">XXXTENTACION</p>
+                    <div class="flex items-center gap-1">
+                      <span>
+                        <svg
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xmlns="http://www.w3.org/2000/svg"
+                          data-encore-id="icon"
+                          role="img"
+                          aria-hidden="false"
+                          class="bSjNEL cSWBDsMjkH62GXIXo6mQ e-9541-icon Svg-sc-ytk21e-0"
+                          viewBox="0 0 16 16"
+                          width="13"
+                          height="13"
+                        >
+                          <title fill="#1ED78B">Pinned</title>
+                          <path
+                            d="M8.822.797a2.72 2.72 0 0 1 3.847 0l2.534 2.533a2.72 2.72 0 0 1 0 3.848l-3.678 3.678-1.337 4.988-4.486-4.486L1.28 15.78a.75.75 0 0 1-1.06-1.06l4.422-4.422L.156 5.812l4.987-1.337L8.822.797z"
+                            fill="#1ED78B"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span>
+                        <p class="text-[#989FB9] text-sm">Artist</p>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="flex items-center gap-2 py-2 cursor-pointer">
+                  <div>
+                    <button
+                      class="flex justify-center items-center rounded w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <img
+                        class="rounded"
+                        src="../public/assets/XXXTENTACION/lookatme.jpg"
+                        alt="lookatme"
+                      />
+                    </button>
+                  </div>
+
+                  <div class="w-full">
+                    <p class="text-[#CDD6F4] text-md">Look At Me!</p>
+                    <div class="flex items-center gap-1">
+                      <span>
+                        <svg
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xmlns="http://www.w3.org/2000/svg"
+                          data-encore-id="icon"
+                          role="img"
+                          aria-hidden="false"
+                          class="bSjNEL cSWBDsMjkH62GXIXo6mQ e-9541-icon Svg-sc-ytk21e-0"
+                          viewBox="0 0 16 16"
+                          width="13"
+                          height="13"
+                        >
+                          <title fill="#1ED78B">Pinned</title>
+                          <path
+                            d="M8.822.797a2.72 2.72 0 0 1 3.847 0l2.534 2.533a2.72 2.72 0 0 1 0 3.848l-3.678 3.678-1.337 4.988-4.486-4.486L1.28 15.78a.75.75 0 0 1-1.06-1.06l4.422-4.422L.156 5.812l4.987-1.337L8.822.797z"
+                            fill="#1ED78B"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span>
+                        <p class="text-[#989FB9] text-sm">
+                          Single • XXXTENTACION
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="flex items-center gap-2 py-2 cursor-pointer">
+                  <div>
+                    <button
+                      class="flex justify-center items-center rounded w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <img
+                        src="../public/assets/MHA/mha.jpg"
+                        alt="mha"
+                        class="rounded"
+                      />
+                    </button>
+                  </div>
+
+                  <div class="w-full">
+                    <p class="text-[#CDD6F4] text-md">My Hero Academia</p>
+                    <div class="flex items-center gap-1">
+                      <span>
+                        <svg
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xmlns="http://www.w3.org/2000/svg"
+                          data-encore-id="icon"
+                          role="img"
+                          aria-hidden="false"
+                          class="bSjNEL cSWBDsMjkH62GXIXo6mQ e-9541-icon Svg-sc-ytk21e-0"
+                          viewBox="0 0 16 16"
+                          width="13"
+                          height="13"
+                        >
+                          <title fill="#1ED78B">Pinned</title>
+                          <path
+                            d="M8.822.797a2.72 2.72 0 0 1 3.847 0l2.534 2.533a2.72 2.72 0 0 1 0 3.848l-3.678 3.678-1.337 4.988-4.486-4.486L1.28 15.78a.75.75 0 0 1-1.06-1.06l4.422-4.422L.156 5.812l4.987-1.337L8.822.797z"
+                            fill="#1ED78B"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span>
+                        <p class="text-[#989FB9] text-sm">Playlist • Spotify</p>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="flex items-center gap-2 py-2 cursor-pointer">
+                  <div>
+                    <button
+                      class="flex justify-center items-center rounded w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <img
+                        src="../public/assets/TRAVIS-SCOTT/4x4.jpg"
+                        alt="4x4"
+                        class="rounded"
+                      />
+                    </button>
+                  </div>
+
+                  <div class="w-full">
+                    <p class="text-[#CDD6F4] text-md">4X4</p>
+                    <div class="flex items-center gap-1">
+                      <span>
+                        <p class="text-[#989FB9] text-sm">
+                          Single • Travis Scott
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="flex items-center gap-2 py-2 cursor-pointer">
+                  <div>
+                    <button
+                      class="flex justify-center items-center rounded w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <img
+                        src="../public/assets/XXXTENTACION/ab67616d0000b273203c89bd4391468eea4cc3f5.jpg"
+                        alt=""
+                        class="rounded"
+                      />
+                    </button>
+                  </div>
+
+                  <div class="w-full">
+                    <p class="text-[#CDD6F4] text-md">17</p>
+                    <div class="flex items-center gap-1">
+                      <span>
+                        <p class="text-[#989FB9] text-sm">
+                          Album • XXXTENTACION
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="flex items-center gap-2 py-2 cursor-pointer">
+                  <div>
+                    <button
+                      class="flex justify-center items-center rounded w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <img
+                        src="../public/assets/XXXTENTACION/ab67616d0000b273806c160566580d6335d1f16c.jpg"
+                        alt=""
+                        class="rounded"
+                      />
+                    </button>
+                  </div>
+
+                  <div class="w-full">
+                    <p class="text-[#CDD6F4] text-md">?</p>
+                    <div class="flex items-center gap-1">
+                      <span>
+                        <p class="text-[#989FB9] text-sm">
+                          Album • XXXTENTACION
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="flex items-center gap-2 py-2 cursor-pointer">
+                  <div>
+                    <button
+                      class="flex justify-center items-center rounded w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <img
+                        src="../public/assets/SONTUNG-MTP/sontungmtp.jpg"
+                        alt="sontungmtp"
+                        class="rounded"
+                      />
+                    </button>
+                  </div>
+
+                  <div class="w-full">
+                    <p class="text-[#CDD6F4] text-md">Sơn Tùng M-TP</p>
+                    <div class="flex items-center gap-1">
+                      <span>
+                        <p class="text-[#989FB9] text-sm">Artist</p>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="flex items-center gap-2 py-2 cursor-pointer">
+                  <div>
+                    <button
+                      class="flex justify-center items-center rounded w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="white"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div class="w-full">
+                    <p class="text-[#CDD6F4] text-md">Liked Songs</p>
+                    <div class="flex items-center gap-1">
+                      <span>
+                        <p class="text-[#989FB9] text-sm">
+                          Playlist • 260 songs
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
