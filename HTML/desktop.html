@@ -258,7 +258,7 @@
             <!-- * plus -->
             <div>
               <!-- * plus svg -->
-              <div id="plus-svg" class="mr-[14px] need-description">
+              <div id="plus-svg" class="group mr-[14px] need-description">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -284,7 +284,7 @@
 
               <div
                 id="plus-windows"
-                class="absolute hidden bg-gray-800 rounded text-gray-300 text-sm translate-x-[-165px] translate-y-[10px]"
+                class="absolute hidden bg-gray-800 rounded text-gray-300 text-sm translate-x-[-172px] translate-y-[10px]"
               >
                 <ul class="p-[4px]">
                   <li>
@@ -482,10 +482,11 @@
             <!-- * artits and albums -->
             <div class="h-[60vh] l">
               <ul>
-                <li class="flex items-center gap-2 py-2 cursor-pointer">
-                  <div>
+                <!-- * liked songs -->
+                <li class="group flex items-center gap-2 py-2 cursor-pointer">
+                  <div class="relative">
                     <button
-                      class="flex justify-center items-center bg-gradient-to-br from-indigo-900 via-indigo-400 to-indigo-100 rounded w-[48px] h-[48px] cursor-pointer"
+                      class="flex justify-center items-center bg-gradient-to-br from-indigo-900 via-indigo-400 to-indigo-100 group-hover:opacity-40 rounded w-[48px] h-[48px] cursor-pointer"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -498,6 +499,28 @@
                           fill-rule="evenodd"
                           d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
                         />
+                      </svg>
+                    </button>
+
+                    <button
+                      class="group-hover:flex top-0 left-0 absolute justify-center items-center hidden w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="bneLcE e-9541-icon Svg-sc-ytk21e-0"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path
+                          d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                          fill-opacity="1"
+                          fill="#CDD6F4"
+                        ></path>
                       </svg>
                     </button>
                   </div>
@@ -532,17 +555,39 @@
                     </div>
                   </div>
                 </li>
-
-                <li class="flex items-center gap-2 py-2 cursor-pointer">
-                  <div>
+                <!-- * XXXTENTACION -->
+                <li class="group flex items-center gap-2 py-2 cursor-pointer">
+                  <div class="relative">
                     <button
-                      class="flex justify-center items-center rounded-full w-[48px] h-[48px] cursor-pointer"
+                      class="flex justify-center items-center group-hover:opacity-40 rounded-full w-[48px] h-[48px] cursor-pointer"
                     >
                       <img
                         class="rounded-full"
                         src="../public/assets/XXXTENTACION/xxxtentacion-avatar.jpg"
                         alt="xxxtentacion-avatar"
                       />
+                    </button>
+
+                    <button
+                      class="group-hover:flex top-0 left-0 absolute justify-center items-center hidden w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="bneLcE e-9541-icon Svg-sc-ytk21e-0"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path
+                          d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                          fill-opacity="1"
+                          fill="#CDD6F4"
+                        ></path>
+                      </svg>
                     </button>
                   </div>
 
@@ -574,17 +619,39 @@
                     </div>
                   </div>
                 </li>
-
-                <li class="flex items-center gap-2 py-2 cursor-pointer">
-                  <div>
+                <!-- * look at me -->
+                <li class="group flex items-center gap-2 py-2 cursor-pointer">
+                  <div class="relative">
                     <button
-                      class="flex justify-center items-center rounded w-[48px] h-[48px] cursor-pointer"
+                      class="flex justify-center items-center group-hover:opacity-40 rounded w-[48px] h-[48px] cursor-pointer"
                     >
                       <img
                         class="rounded"
                         src="../public/assets/XXXTENTACION/lookatme.jpg"
                         alt="lookatme"
                       />
+                    </button>
+
+                    <button
+                      class="group-hover:flex top-0 left-0 absolute justify-center items-center hidden w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="bneLcE e-9541-icon Svg-sc-ytk21e-0"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path
+                          d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                          fill-opacity="1"
+                          fill="#CDD6F4"
+                        ></path>
+                      </svg>
                     </button>
                   </div>
 
@@ -618,17 +685,39 @@
                     </div>
                   </div>
                 </li>
-
-                <li class="flex items-center gap-2 py-2 cursor-pointer">
-                  <div>
+                <!-- * my hero academia -->
+                <li class="group flex items-center gap-2 py-2 cursor-pointer">
+                  <div class="relative">
                     <button
-                      class="flex justify-center items-center rounded w-[48px] h-[48px] cursor-pointer"
+                      class="flex justify-center items-center group-hover:opacity-40 rounded w-[48px] h-[48px] cursor-pointer"
                     >
                       <img
                         src="../public/assets/MHA/mha.jpg"
                         alt="mha"
                         class="rounded"
                       />
+                    </button>
+
+                    <button
+                      class="group-hover:flex top-0 left-0 absolute justify-center items-center hidden w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="bneLcE e-9541-icon Svg-sc-ytk21e-0"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path
+                          d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                          fill-opacity="1"
+                          fill="#CDD6F4"
+                        ></path>
+                      </svg>
                     </button>
                   </div>
 
@@ -660,17 +749,39 @@
                     </div>
                   </div>
                 </li>
-
-                <li class="flex items-center gap-2 py-2 cursor-pointer">
-                  <div>
+                <!-- * 4x4 -->
+                <li class="group flex items-center gap-2 py-2 cursor-pointer">
+                  <div class="relative">
                     <button
-                      class="flex justify-center items-center rounded w-[48px] h-[48px] cursor-pointer"
+                      class="flex justify-center items-center group-hover:opacity-40 rounded w-[48px] h-[48px] cursor-pointer"
                     >
                       <img
                         src="../public/assets/TRAVIS-SCOTT/4x4.jpg"
                         alt="4x4"
                         class="rounded"
                       />
+                    </button>
+
+                    <button
+                      class="group-hover:flex top-0 left-0 absolute justify-center items-center hidden w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="bneLcE e-9541-icon Svg-sc-ytk21e-0"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path
+                          d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                          fill-opacity="1"
+                          fill="#CDD6F4"
+                        ></path>
+                      </svg>
                     </button>
                   </div>
 
@@ -685,42 +796,39 @@
                     </div>
                   </div>
                 </li>
-
-                <li class="flex items-center gap-2 py-2 cursor-pointer">
-                  <div>
+                <!-- * ? -->
+                <li class="group flex items-center gap-2 py-2 cursor-pointer">
+                  <div class="relative">
                     <button
-                      class="flex justify-center items-center rounded w-[48px] h-[48px] cursor-pointer"
-                    >
-                      <img
-                        src="../public/assets/XXXTENTACION/ab67616d0000b273203c89bd4391468eea4cc3f5.jpg"
-                        alt=""
-                        class="rounded"
-                      />
-                    </button>
-                  </div>
-
-                  <div class="w-full">
-                    <p class="text-[#CDD6F4] text-md">17</p>
-                    <div class="flex items-center gap-1">
-                      <span>
-                        <p class="text-[#989FB9] text-sm">
-                          Album • XXXTENTACION
-                        </p>
-                      </span>
-                    </div>
-                  </div>
-                </li>
-
-                <li class="flex items-center gap-2 py-2 cursor-pointer">
-                  <div>
-                    <button
-                      class="flex justify-center items-center rounded w-[48px] h-[48px] cursor-pointer"
+                      class="flex justify-center items-center group-hover:opacity-40 rounded w-[48px] h-[48px] cursor-pointer"
                     >
                       <img
                         src="../public/assets/XXXTENTACION/ab67616d0000b273806c160566580d6335d1f16c.jpg"
                         alt=""
                         class="rounded"
                       />
+                    </button>
+
+                    <button
+                      class="group-hover:flex top-0 left-0 absolute justify-center items-center hidden w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="bneLcE e-9541-icon Svg-sc-ytk21e-0"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path
+                          d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                          fill-opacity="1"
+                          fill="#CDD6F4"
+                        ></path>
+                      </svg>
                     </button>
                   </div>
 
@@ -735,17 +843,86 @@
                     </div>
                   </div>
                 </li>
-
-                <li class="flex items-center gap-2 py-2 cursor-pointer">
-                  <div>
+                <!-- * 17 -->
+                <li class="group flex items-center gap-2 py-2 cursor-pointer">
+                  <div class="relative">
                     <button
-                      class="flex justify-center items-center rounded w-[48px] h-[48px] cursor-pointer"
+                      class="flex justify-center items-center group-hover:opacity-40 rounded w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <img
+                        src="../public/assets/XXXTENTACION/ab67616d0000b273203c89bd4391468eea4cc3f5.jpg"
+                        alt=""
+                        class="rounded"
+                      />
+                    </button>
+
+                    <button
+                      class="group-hover:flex top-0 left-0 absolute justify-center items-center hidden w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="bneLcE e-9541-icon Svg-sc-ytk21e-0"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path
+                          d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                          fill-opacity="1"
+                          fill="#CDD6F4"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div class="w-full">
+                    <p class="text-[#CDD6F4] text-md">17</p>
+                    <div class="flex items-center gap-1">
+                      <span>
+                        <p class="text-[#989FB9] text-sm">
+                          Album • XXXTENTACION
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <!-- * son tung mtp -->
+                <li class="group flex items-center gap-2 py-2 cursor-pointer">
+                  <div class="relative">
+                    <button
+                      class="flex justify-center items-center group-hover:opacity-40 rounded w-[48px] h-[48px] cursor-pointer"
                     >
                       <img
                         src="../public/assets/SONTUNG-MTP/sontungmtp.jpg"
                         alt="sontungmtp"
                         class="rounded"
                       />
+                    </button>
+
+                    <button
+                      class="group-hover:flex top-0 left-0 absolute justify-center items-center hidden w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="bneLcE e-9541-icon Svg-sc-ytk21e-0"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path
+                          d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                          fill-opacity="1"
+                          fill="#CDD6F4"
+                        ></path>
+                      </svg>
                     </button>
                   </div>
 
@@ -758,34 +935,227 @@
                     </div>
                   </div>
                 </li>
-
-                <li class="flex items-center gap-2 py-2 cursor-pointer">
-                  <div>
+                <!-- * Shiloh Dynasty -->
+                <li class="group flex items-center gap-2 py-2 cursor-pointer">
+                  <div class="relative">
                     <button
-                      class="flex justify-center items-center rounded w-[48px] h-[48px] cursor-pointer"
+                      class="flex justify-center items-center group-hover:opacity-40 rounded w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <img
+                        src="../public/assets/SHILOH-DYNASTY/ab67616100005174206a97aa01385ef684f8e58c.jpg"
+                        alt="shiloh-dynasty"
+                        class="rounded-full"
+                      />
+                    </button>
+
+                    <button
+                      class="group-hover:flex top-0 left-0 absolute justify-center items-center hidden w-[48px] h-[48px] cursor-pointer"
                     >
                       <svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
                         xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="white"
-                        viewBox="0 0 16 16"
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="bneLcE e-9541-icon Svg-sc-ytk21e-0"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
                       >
                         <path
-                          fill-rule="evenodd"
-                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
-                        />
+                          d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                          fill-opacity="1"
+                          fill="#CDD6F4"
+                        ></path>
                       </svg>
                     </button>
                   </div>
 
                   <div class="w-full">
-                    <p class="text-[#CDD6F4] text-md">Liked Songs</p>
+                    <p class="text-[#CDD6F4] text-md">Shiloh Dynasty</p>
                     <div class="flex items-center gap-1">
                       <span>
-                        <p class="text-[#989FB9] text-sm">
-                          Playlist • 260 songs
-                        </p>
+                        <p class="text-[#989FB9] text-sm">Artist</p>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <!-- * takayan -->
+                <li class="group flex items-center gap-2 py-2 cursor-pointer">
+                  <div class="relative">
+                    <button
+                      class="flex justify-center items-center group-hover:opacity-40 rounded w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <img
+                        src="../public/assets/TAKAYAN/takayan.jpg"
+                        alt="takayan"
+                        class="rounded-full"
+                      />
+                    </button>
+
+                    <button
+                      class="group-hover:flex top-0 left-0 absolute justify-center items-center hidden w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="bneLcE e-9541-icon Svg-sc-ytk21e-0"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path
+                          d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                          fill-opacity="1"
+                          fill="#CDD6F4"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div class="w-full">
+                    <p class="text-[#CDD6F4] text-md">takayan</p>
+                    <div class="flex items-center gap-1">
+                      <span>
+                        <p class="text-[#989FB9] text-sm">Artist</p>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <!-- * ZUTOMAYO -->
+                <li class="group flex items-center gap-2 py-2 cursor-pointer">
+                  <div class="relative">
+                    <button
+                      class="flex justify-center items-center group-hover:opacity-40 rounded w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <img
+                        src="../public/assets/ZUTOMAYO/zutomayo.jpg"
+                        alt="zutomayo"
+                        class="rounded-full"
+                      />
+                    </button>
+
+                    <button
+                      class="group-hover:flex top-0 left-0 absolute justify-center items-center hidden w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="bneLcE e-9541-icon Svg-sc-ytk21e-0"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path
+                          d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                          fill-opacity="1"
+                          fill="#CDD6F4"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div class="w-full">
+                    <p class="text-[#CDD6F4] text-md">ZUTOMAYO</p>
+                    <div class="flex items-center gap-1">
+                      <span>
+                        <p class="text-[#989FB9] text-sm">Artist</p>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <!-- * ZUTOMAYO -->
+                <li class="group flex items-center gap-2 py-2 cursor-pointer">
+                  <div class="relative">
+                    <button
+                      class="flex justify-center items-center group-hover:opacity-40 rounded w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <img
+                        src="../public/assets/ZUTOMAYO/zutomayo.jpg"
+                        alt="zutomayo"
+                        class="rounded-full"
+                      />
+                    </button>
+
+                    <button
+                      class="group-hover:flex top-0 left-0 absolute justify-center items-center hidden w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="bneLcE e-9541-icon Svg-sc-ytk21e-0"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path
+                          d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                          fill-opacity="1"
+                          fill="#CDD6F4"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div class="w-full">
+                    <p class="text-[#CDD6F4] text-md">ZUTOMAYO</p>
+                    <div class="flex items-center gap-1">
+                      <span>
+                        <p class="text-[#989FB9] text-sm">Artist</p>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <!-- * ZUTOMAYO -->
+                <li class="group flex items-center gap-2 py-2 cursor-pointer">
+                  <div class="relative">
+                    <button
+                      class="flex justify-center items-center group-hover:opacity-40 rounded w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <img
+                        src="../public/assets/ZUTOMAYO/zutomayo.jpg"
+                        alt="zutomayo"
+                        class="rounded-full"
+                      />
+                    </button>
+
+                    <button
+                      class="group-hover:flex top-0 left-0 absolute justify-center items-center hidden w-[48px] h-[48px] cursor-pointer"
+                    >
+                      <svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="bneLcE e-9541-icon Svg-sc-ytk21e-0"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path
+                          d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                          fill-opacity="1"
+                          fill="#CDD6F4"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div class="w-full">
+                    <p class="text-[#CDD6F4] text-md">ZUTOMAYO</p>
+                    <div class="flex items-center gap-1">
+                      <span>
+                        <p class="text-[#989FB9] text-sm">Artist</p>
                       </span>
                     </div>
                   </div>

@@ -4,8 +4,13 @@ const plusDescriptions = document.getElementById("plus-description");
 
 plusSvg.addEventListener("click", (e) => {
   e.stopPropagation();
-  plusWindows.classList.remove("hidden");
-  plusDescriptions.classList.add("hidden");
+  // Toggle class hidden
+  if (plusWindows.classList.contains("hidden")) {
+    plusWindows.classList.remove("hidden");
+    plusDescriptions.classList.add("hidden");
+  } else {
+    plusWindows.classList.add("hidden");
+  }
 });
 
 // Khi click ra ngoài, ẩn plusWindows
