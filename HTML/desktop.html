@@ -52,7 +52,7 @@
     />
     <title>Spotify</title>
   </head>
-  <body class="w-full min-w-[1280px]">
+  <body class="w-full">
     <header class="items-center w-full h-[64px]">
       <nav
         class="flex justify-between items-center bg-gray-800 px-[8px] w-full h-full"
@@ -64,7 +64,7 @@
             xmlns="http://www.w3.org/2000/svg"
             role="img"
             viewBox="0 0 24 24"
-            class="ml-[18px] e-9541-baseline e-9541-logo"
+            class="mx-[12px]"
             aria-label="Spotify"
             aria-hidden="false"
             data-encore-id="logoSpotify"
@@ -96,7 +96,6 @@
               width="29"
               height="29"
               viewBox="0,0,256,256"
-              id="need-description"
               class="group-hover:scale-110 p-[5px] transform duration-500 cursor-pointer need-description"
             >
               <g fill="#989FB9">
@@ -108,8 +107,7 @@
               </g>
             </svg>
             <span
-              id="description"
-              class="absolute hidden bg-gray-700 opacity-0 mt-[5px] p-[3px] pt-[1px] rounded text-sm text-white transform transition-all translate-x-[-7px] translate-y-2 duration-500 description ease-in-out"
+              class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[5px] p-[3px] pt-[1px] rounded text-sm text-white transform transition-all translate-x-[-7px] translate-y-2 duration-500 description ease-in-out"
               >Home</span
             >
           </div>
@@ -138,7 +136,7 @@
                 </g>
               </svg>
               <span
-                class="absolute hidden bg-gray-700 opacity-0 mt-[7px] p-[3px] pt-[1px] rounded text-sm text-white transform transition-all translate-x-[-7px] translate-y-2 duration-500 description ease-in-out"
+                class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[7px] p-[3px] pt-[1px] rounded text-sm text-white transform transition-all translate-x-[-7px] translate-y-2 duration-500 description ease-in-out"
                 >Search</span
               >
             </div>
@@ -191,7 +189,7 @@
               </g>
             </svg>
             <span
-              class="absolute hidden bg-gray-700 opacity-0 mt-[5px] p-[3px] pt-[1px] rounded text-white text-xs transform transition-all translate-x-[-19px] translate-y-2 duration-500 description ease-in-out"
+              class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[5px] p-[3px] pt-[1px] rounded text-white text-xs transform transition-all translate-x-[-19px] translate-y-2 duration-500 description ease-in-out"
               >Notification</span
             >
           </div>
@@ -213,7 +211,7 @@
               />
             </svg>
             <span
-              class="absolute hidden bg-gray-700 opacity-0 mt-[35px] p-[3px] pt-[1px] rounded text-white text-xs transform transition-all translate-y-2 duration-500 description ease-in-out"
+              class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[35px] p-[3px] pt-[1px] rounded text-white text-xs transform transition-all translate-y-2 duration-500 description ease-in-out"
               >User</span
             >
           </div>
@@ -227,7 +225,7 @@
         <div class="bg-gray-900 h-full overflow-hidden">
           <!-- * header -->
           <div
-            class="flex justify-between items-center px-[8px] pt-[16px] pb-[8px] w-full"
+            class="flex justify-between items-center pt-[16px] pr-[8px] pb-[8px] pl-[12px] w-full"
           >
             <div class="group flex items-center gap-3 cursor-pointer">
               <svg
@@ -249,7 +247,7 @@
                 ></path>
               </svg>
               <span
-                class="group-hover:text-white font-bold text-[#CDD6F4] text-md"
+                class="group-hover:text-white font-bold text-[#CDD6F4] text-md text-nowrap"
               >
                 Your Library
               </span>
@@ -258,7 +256,7 @@
             <!-- * plus -->
             <div>
               <!-- * plus svg -->
-              <div id="plus-svg" class="group mr-[12px] need-description">
+              <div id="plus-svg" class="group mr-[10px] need-description">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -284,7 +282,7 @@
 
               <div
                 id="plus-windows"
-                class="absolute hidden bg-gray-800 rounded text-gray-300 text-sm translate-x-[-177px] translate-y-[10px]"
+                class="absolute hidden bg-gray-800 rounded text-gray-300 text-sm translate-x-[-175px] translate-y-[10px]"
               >
                 <ul class="p-[4px]">
                   <li>
@@ -346,7 +344,7 @@
             </div>
           </div>
           <!-- * content -->
-          <div class="px-[8px]">
+          <div class="pr-[8px] pl-[12px]">
             <ul class="flex items-center gap-2 py-[8px] text-[#CDD6F4] text-sm">
               <li
                 class="bg-[#33333b] hover:bg-[#41414c] px-3 py-1 rounded-full cursor-pointer"
@@ -367,7 +365,9 @@
           </div>
 
           <!-- * overflow col 1 -->
-          <div class="custom-scroll pl-[8px] h-full max-h-full overflow-y-auto">
+          <div
+            class="custom-scroll pl-[12px] h-full max-h-full overflow-y-auto"
+          >
             <!-- * search and recents -->
             <div class="flex items-center py-[8px] w-full">
               <!-- * search -->
@@ -391,7 +391,7 @@
                   </g>
                 </svg>
                 <span
-                  class="absolute hidden bg-gray-700 opacity-0 mt-[-60px] p-[3px] pt-[1px] rounded text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
+                  class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[-60px] p-[3px] pt-[1px] rounded text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
                   >Search in Your Library</span
                 >
               </div>
@@ -480,7 +480,8 @@
             </div>
 
             <!-- * artits and albums -->
-            <div class="h-[60vh] l">
+            <!-- ? 60vh -->
+            <div class="text-nowrap">
               <ul>
                 <!-- * liked songs -->
                 <li class="group flex items-center gap-2 py-2 cursor-pointer">
@@ -1171,18 +1172,20 @@
             class="custom-scroll h-full max-h-full overflow-x-hidden overflow-y-auto"
           >
             <!-- * header -->
-            <div class="px-4 pt-8 pb-4 cursor-default">
+            <div
+              class="bg-gradient-to-b from-[#545454] to-[#2C2C2C] px-4 pt-6 pb-4 cursor-default"
+            >
               <div class="flex items-center gap-4">
                 <!-- * xxxtentacion-avatar -->
                 <div class="rounded">
                   <img
                     src="../public/assets/XXXTENTACION/xxxtentacion-avatar.jpg"
                     alt="xxxtentacion-avatar"
-                    class="rounded-full"
+                    class="rounded-full min-w-[128px]"
                   />
                 </div>
 
-                <div class="space-y-1 text-white">
+                <div class="text-white">
                   <div class="flex items-center gap-2">
                     <span>
                       <svg
@@ -1212,16 +1215,18 @@
                         ></path>
                       </svg>
                     </span>
-                    <span class="text-sm">Verified Artist</span>
+                    <span class="w-full text-sm">Verified Artist</span>
                   </div>
                   <div>
                     <span
-                      class="w-fit font-[SpotifyMixUITitleExtrabold] text-[#CDD6F4] text-[4.3vw]"
+                      class="font-[SpotifyMixUITitleExtrabold] text-[#CDD6F4] text-[4.3vw]"
                       >XXXTENTACION
                     </span>
                   </div>
-                  <div>
-                    <span class="text-md">38,132,287 monthly listeners</span>
+                  <div class="mt-1">
+                    <span class="w-full text-md"
+                      >38,132,287 monthly listeners</span
+                    >
                   </div>
                 </div>
               </div>

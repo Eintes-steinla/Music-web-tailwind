@@ -1,8 +1,14 @@
 fill #989FB9
 fill 2 #CDD6F4
 
+group relative
+class="need-description"
 <span
     class="description hidden opacity-0 transform translate-y-2 transition-all duration-500 ease-in-out absolute text-white bg-gray-700 rounded p-[3px] pt-[1px] mt-[-60px] text-sm"
+    >Search in Your Library</span
+>
+<span
+    class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[-60px] p-[3px] pt-[1px] rounded text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
     >Search in Your Library</span
 >
 
