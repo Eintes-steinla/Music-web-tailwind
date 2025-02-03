@@ -18,3 +18,5 @@ hidden opacity-0 w-[2px]
 side bar icon #989FB9
 
 plus #CDD6F4
+
+#222222
