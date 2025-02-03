@@ -1,10 +1,41 @@
-.custom-scroll {
-  transition: 0.3s ease-in-out;
+@font-face {
+  font-family: "SpotifyMixUI";
+  src: url("../public/fonts/SpotifyMixUI-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SpotifyMixUIBold";
+  src: url("../public/fonts/SpotifyMixUI-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SpotifyMixUITitleBold";
+  src: url("../public/fonts/SpotifyMixUI-Title-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SpotifyMixUITitleExtrabold";
+  src: url("../public/fonts/SpotifyMixUI-Title-Extrabold.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SpotifyMixUIVariable";
+  src: url("../public/fonts/SpotifyMixUI-Title-Variable.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "SpotifyMixUI";
 }
 
 .custom-scroll::-webkit-scrollbar {
-  width: 10px;
-  /* display: none; */
+  width: 8px;
 }
 
 .custom-scroll::-webkit-scrollbar-thumb {
