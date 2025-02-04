@@ -108,7 +108,7 @@
               </g>
             </svg>
             <span
-              class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[5px] p-[3px] pt-[1px] rounded text-sm text-white transform transition-all translate-x-[-7px] translate-y-2 duration-500 description ease-in-out"
+              class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[5px] ml-[-10px] px-[5px] py-[3px] rounded text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
               >Home</span
             >
           </div>
@@ -137,7 +137,7 @@
                 </g>
               </svg>
               <span
-                class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[7px] p-[3px] pt-[1px] rounded text-sm text-white transform transition-all translate-x-[-7px] translate-y-2 duration-500 description ease-in-out"
+                class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[7px] ml-[-7px] px-[5px] py-[3px] rounded text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
                 >Search</span
               >
             </div>
@@ -190,7 +190,7 @@
               </g>
             </svg>
             <span
-              class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[5px] p-[3px] pt-[1px] rounded text-white text-xs transform transition-all translate-x-[-19px] translate-y-2 duration-500 description ease-in-out"
+              class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[5px] ml-[-22px] px-[5px] py-[3px] rounded text-white text-xs transform transition-all translate-y-2 duration-500 description ease-in-out"
               >Notification</span
             >
           </div>
@@ -212,7 +212,7 @@
               />
             </svg>
             <span
-              class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[35px] p-[3px] pt-[1px] rounded text-white text-xs transform transition-all translate-y-2 duration-500 description ease-in-out"
+              class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[35px] px-[5px] py-[3px] rounded text-white text-xs transform transition-all translate-y-2 duration-500 description ease-in-out"
               >User</span
             >
           </div>
@@ -228,14 +228,15 @@
           <div
             class="flex justify-between items-center pt-[16px] pr-[8px] pb-[8px] pl-[12px] w-full"
           >
-            <div class="group flex items-center gap-3 cursor-pointer">
+            <div
+              class="group flex items-center gap-3 transition-all duration-900 cursor-pointer ease-in-out need-description"
+            >
               <svg
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns="http://www.w3.org/2000/svg"
                 data-encore-id="icon"
                 role="img"
                 aria-hidden="true"
-                class="bneLcE e-9541-icon Svg-sc-ytk21e-0"
                 viewBox="0 0 24 24"
                 width="26"
                 height="26"
@@ -244,14 +245,18 @@
                   d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"
                   fill-opacity="1"
                   fill="#CDD6F4"
-                  class="group-hover:fill-white hover:opacity-100"
+                  class="group-hover:fill-white transition-all duration-300 ease-in-out"
                 ></path>
               </svg>
               <span
-                class="group-hover:text-white font-bold text-[#CDD6F4] text-md text-nowrap"
+                class="group-hover:text-white font-bold text-[#CDD6F4] text-md text-nowrap transition-all duration-300 ease-in-out"
               >
                 Your Library
               </span>
+              <span
+                class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[-70px] px-[5px] py-[3px] rounded text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
+                >Collapse Your Library</span
+              >
             </div>
 
             <!-- * plus -->
@@ -276,7 +281,7 @@
                 </svg>
                 <span
                   id="plus-description"
-                  class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[-52px] p-[3px] pt-[1px] rounded text-sm text-white transform transition-all translate-x-[-65px] translate-y-2 duration-500 description ease-in-out"
+                  class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[-52px] ml-[-70px] px-[5px] py-[3px] rounded text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
                   >Create playlist or folder</span
                 >
               </div>
@@ -348,17 +353,17 @@
           <div class="pr-[8px] pl-[12px]">
             <ul class="flex items-center gap-2 py-[8px] text-[#CDD6F4] text-sm">
               <li
-                class="bg-[#33333b] hover:bg-[#41414c] px-3 py-1 rounded-full cursor-pointer"
+                class="bg-[#33333b] hover:bg-[#41414c] active:bg-[#4c4c5a] px-3 py-1 rounded-full cursor-pointer"
               >
                 Playlists
               </li>
               <li
-                class="bg-[#33333b] hover:bg-[#41414c] px-3 py-1 rounded-full cursor-pointer"
+                class="bg-[#33333b] hover:bg-[#41414c] active:bg-[#4c4c5a] px-3 py-1 rounded-full cursor-pointer"
               >
                 Artists
               </li>
               <li
-                class="bg-[#33333b] hover:bg-[#41414c] px-3 py-1 rounded-full cursor-pointer"
+                class="bg-[#33333b] hover:bg-[#41414c] active:bg-[#4c4c5a] px-3 py-1 rounded-full cursor-pointer"
               >
                 Albums
               </li>
@@ -449,11 +454,11 @@
               <!-- * recents -->
               <div class="ml-auto">
                 <button
-                  class="group flex items-center py-[4px] pr-[12px] pl-[16px] rounded-full transition-all duration-300 cursor-pointer hover:scale-105"
+                  class="active:scale-95 group flex items-center py-[4px] pr-[12px] pl-[16px] rounded-full transition-all duration-200 cursor-pointer hover:scale-105"
                 >
                   <span
                     id="search-recents"
-                    class="group-hover:text-[#CDD6F4] text-[#989FB9] text-sm"
+                    class="group-hover:text-[#CDD6F4] group-active:text-[#989FB9] text-[#989FB9] text-sm"
                     >Recents</span
                   >
                   <span class="pl-[5px]">
@@ -472,7 +477,7 @@
                         d="M15 14.5H5V13h10v1.5zm0-5.75H5v-1.5h10v1.5zM15 3H5V1.5h10V3zM3 3H1V1.5h2V3zm0 11.5H1V13h2v1.5zm0-5.75H1v-1.5h2v1.5z"
                         fill-opacity="1"
                         fill="#989FB9"
-                        class="group-hover:fill-[#CDD6F4]"
+                        class="group-hover:fill-[#CDD6F4] group-active:fill-[#989FB9]"
                       ></path>
                     </svg>
                   </span>
@@ -1168,7 +1173,7 @@
         </div>
 
         <!-- ? main -->
-        <div id="main" class="relative bg-gray-900 h-full overflow-hidden">
+        <div id="main" class="relative bg-[#19191E] h-full overflow-hidden">
           <div
             class="custom-scroll h-full max-h-full overflow-x-hidden overflow-y-auto"
           >
@@ -1234,30 +1239,39 @@
                 </div>
               </div>
             </div>
-
-            <!-- * play header sticky -->
+            <!-- ? play header sticky -->
             <div
               id="sticky-header"
-              class="top-0 left-0 absolute hidden bg-[#152035] px-4 py-2 w-full"
+              class="top-0 left-0 absolute bg-[#152035] px-4 py-2 w-full"
             >
               <div class="flex items-center gap-2">
                 <div
-                  class="transform hover:scale-105 flex justify-center items-center bg-[#1ED760] hover:bg-[#3BE377] rounded-full w-[48px] h-[48px] cursor-pointer"
+                  class="active:scale-95 flex justify-center items-center bg-[#1ED760] hover:bg-[#3BE377] rounded-full w-[48px] min-w-[48px] h-[48px] transform play-button-bg hover:scale-105 cursor-pointer"
                 >
-                  <svg
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns="http://www.w3.org/2000/svg"
-                    data-encore-id="icon"
-                    role="img"
-                    aria-hidden="true"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    height="24"
-                  >
-                    <path
-                      d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
-                    ></path>
-                  </svg>
+                  <!-- From Uiverse.io by bbaginuk -->
+                  <label class="play-button">
+                    <input checked="checked" type="checkbox" />
+                    <svg
+                      viewBox="0 0 384 512"
+                      height="24px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="ml-1 play"
+                    >
+                      <path
+                        d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                      ></path>
+                    </svg>
+                    <svg
+                      viewBox="0 0 320 512"
+                      height="24px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="pause"
+                    >
+                      <path
+                        d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"
+                      ></path>
+                    </svg>
+                  </label>
                 </div>
                 <span
                   class="font-[SpotifyMixUITitleBold] text-2xl text-white cursor-default"
@@ -1265,7 +1279,6 @@
                 >
               </div>
             </div>
-
             <!-- * play header -->
             <div
               class="bg-gradient-to-b from-[#212121] to-[#1C1C20] px-4 py-4 w-full"
@@ -1273,7 +1286,7 @@
               <div class="flex items-center gap-5">
                 <!-- * play -->
                 <div
-                  class="flex justify-center items-center bg-[#1ED760] hover:bg-[#3BE377] rounded-full w-[56px] min-w-[56px] h-[56px] transform play-button-bg hover:scale-105 cursor-pointer"
+                  class="active:scale-95 flex justify-center items-center bg-[#1ED760] hover:bg-[#3BE377] rounded-full w-[56px] min-w-[56px] h-[56px] transform play-button-bg hover:scale-105 cursor-pointer"
                 >
                   <!-- From Uiverse.io by bbaginuk -->
                   <label class="play-button">
@@ -1303,7 +1316,8 @@
                 <!-- * Following -->
                 <div>
                   <button
-                    class="transform hover:scale-105 border-[#989FB9] border-1 hover:border-white px-[15px] py-[3px] rounded-full transition-all duration-100 cursor-pointer ease-in-out"
+                    id="follow-button"
+                    class="active:scale-95 transform hover:scale-105 border-[#989FB9] border-1 hover:border-white px-[15px] py-[3px] rounded-full transition-all duration-100 cursor-pointer ease-in-out"
                   >
                     <span class="font-[SpotifyMixUIBold] text-[#CDD6F4] text-sm"
                       >Following</span
@@ -1318,7 +1332,7 @@
                     data-encore-id="icon"
                     role="img"
                     aria-hidden="true"
-                    class="cursor-pointer hover:scale-105 group relative need-description"
+                    class="active:scale-95 cursor-pointer hover:scale-105 group relative need-description"
                     viewBox="0 0 24 24"
                     width="32"
                     height="32"
@@ -1327,16 +1341,17 @@
                       d="M4.5 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm15 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm-7.5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
                       fill-opacity="0.7"
                       fill="#CDD6F4"
-                      class="group-hover:fill-white"
+                      class="group-hover:fill-white group-active:fill-[#CDD6F4]"
                     ></path>
                   </svg>
                   <span
-                    class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[-80px] ml-[-90px] p-[3px] pt-[1px] rounded text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
+                    class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[-80px] ml-[-90px] px-[5px] py-[3px] rounded text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
                     >More options for XXXTENTACION</span
                   >
                 </div>
               </div>
             </div>
+            <!-- * popular -->
           </div>
         </div>
 
@@ -1350,5 +1365,6 @@
     <script src="../JS/plus.js"></script>
     <script src="../JS/sticky-scroll.js"></script>
     <script src="../JS/play-button.js"></script>
+    <script src="../JS/follow-button.js"></script>
   </body>
 </html>

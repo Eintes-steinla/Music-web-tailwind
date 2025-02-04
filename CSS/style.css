@@ -32,6 +32,7 @@
 
 body {
   font-family: "SpotifyMixUI";
+  user-select: none;
 }
 
 .custom-scroll::-webkit-scrollbar {
