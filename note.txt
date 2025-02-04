@@ -16,3 +16,5 @@ side bar icon #989FB9
 plus #CDD6F4
 
 #222222
+
+w-[240.63px]
