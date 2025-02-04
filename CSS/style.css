@@ -51,3 +51,8 @@ body {
 .custom-scroll::-webkit-scrollbar-track {
   background-color: transparent;
 }
+
+.slide:hover .play-button-bg {
+  opacity: 1;
+  transform: translateY(-5px);
+}
