@@ -20,3 +20,5 @@ plus #CDD6F4
 w-[240.63px]
 
 content-hide hidden see-more
+
+ngăn phần tử co lại flex-shirk-0
