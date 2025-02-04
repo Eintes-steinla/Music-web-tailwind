@@ -1325,7 +1325,7 @@
                   </button>
                 </div>
                 <!-- * 3 dots -->
-                <div>
+                <div class="relative">
                   <svg
                     xmlns:xlink="http://www.w3.org/1999/xlink"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1345,23 +1345,23 @@
                     ></path>
                   </svg>
                   <span
-                    class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[-80px] ml-[-90px] px-[5px] py-[3px] rounded text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
+                    class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[-80px] ml-[-90px] px-[5px] py-[3px] rounded text-nowrap text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
                     >More options for XXXTENTACION</span
                   >
                 </div>
               </div>
             </div>
             <!-- * popular -->
-            <div class="space-y-4 px-4 py-2">
+            <div class="px-4 py-2">
               <!-- * h2 popular -->
-              <div>
+              <div class="pb-4">
                 <h2 class="font-[SpotifyMixUITitleBold] text-[#CDD6F4] text-xl">
                   Popular
                 </h2>
               </div>
               <!-- * content -->
               <div>
-                <ul class="">
+                <ul>
                   <!-- * stt 1 -->
                   <li
                     class="group items-center gap-4 grid grid-flow-col hover:bg-[#282831] px-[16px] py-[8px] rounded track-main"
@@ -1999,7 +1999,7 @@
                   </li>
                   <!-- * stt 6 -->
                   <li
-                    class="group items-center gap-4 grid grid-flow-col hover:bg-[#282831] px-[16px] py-[8px] rounded track-main"
+                    class="group items-center content-hide gap-4 hidden grid-flow-col hover:bg-[#282831] px-[16px] py-[8px] rounded track-main"
                   >
                     <!-- * stt -->
                     <div
@@ -2126,7 +2126,7 @@
                   </li>
                   <!-- * stt 7 -->
                   <li
-                    class="group items-center gap-4 grid grid-flow-col hover:bg-[#282831] px-[16px] py-[8px] rounded track-main"
+                    class="group items-center content-hide gap-4 hidden grid-flow-col hover:bg-[#282831] px-[16px] py-[8px] rounded track-main"
                   >
                     <!-- * stt -->
                     <div
@@ -2253,7 +2253,7 @@
                   </li>
                   <!-- * stt 8 -->
                   <li
-                    class="group items-center gap-4 grid grid-flow-col hover:bg-[#282831] px-[16px] py-[8px] rounded track-main"
+                    class="group items-center content-hide gap-4 hidden grid-flow-col hover:bg-[#282831] px-[16px] py-[8px] rounded track-main"
                   >
                     <!-- * stt -->
                     <div
@@ -2380,7 +2380,7 @@
                   </li>
                   <!-- * stt 9 -->
                   <li
-                    class="group items-center gap-4 grid grid-flow-col hover:bg-[#282831] px-[16px] py-[8px] rounded track-main"
+                    class="group items-center content-hide gap-4 hidden grid-flow-col hover:bg-[#282831] px-[16px] py-[8px] rounded track-main"
                   >
                     <!-- * stt -->
                     <div
@@ -2507,7 +2507,7 @@
                   </li>
                   <!-- * stt 10 -->
                   <li
-                    class="group items-center gap-4 grid grid-flow-col hover:bg-[#282831] px-[16px] py-[8px] rounded track-main"
+                    class="group items-center content-hide gap-4 hidden grid-flow-col hover:bg-[#282831] px-[16px] py-[8px] rounded track-main"
                   >
                     <!-- * stt -->
                     <div
@@ -2634,6 +2634,15 @@
                   </li>
                 </ul>
               </div>
+              <!-- * see more -->
+              <div>
+                <button id="see-more" class="group p-[16px]">
+                  <span
+                    class="group-hover:text-white font-[SpotifyMixUIBold] text-[#CDD6F4] text-sm"
+                    >See more</span
+                  >
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -2650,5 +2659,6 @@
     <script src="../JS/play-button.js"></script>
     <script src="../JS/follow-button.js"></script>
     <script src="../JS/add-to-playlist.js"></script>
+    <script src="../JS/see-more.js"></script>
   </body>
 </html>

@@ -18,3 +18,5 @@ plus #CDD6F4
 #222222
 
 w-[240.63px]
+
+content-hide hidden see-more
