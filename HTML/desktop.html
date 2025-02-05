@@ -54,8 +54,8 @@
     <title>Spotify</title>
   </head>
 
-  <body class="bg-[#1E1E2E] w-full">
-    <header class="items-center w-full h-[64px]">
+  <body class="bg-[#1E1E2E] custom-scroll w-full">
+    <header class="items-center w-full min-w-[620px] h-[64px]">
       <nav
         class="flex justify-between items-center bg-[#000000] px-[8px] w-full h-full"
       >
@@ -223,10 +223,15 @@
       </nav>
     </header>
 
-    <section class="bg-[#1E1E2E] w-full h-[450px]">
-      <div class="gap-2 grid grid-cols-[1fr_2fr_1fr] px-[8px] w-full h-full">
+    <section
+      class="bg-[#1E1E2E] w-full min-w-[620px]"
+      style="height: calc(100vh - 64px - 72px)"
+    >
+      <div
+        class="gap-2 grid grid-cols-[1fr_2fr_1fr] px-[8px] w-full h-full max-h-full"
+      >
         <!-- ? aside -->
-        <div class="bg-[#11111B] h-full overflow-hidden">
+        <div class="bg-[#11111B] h-full max-h-full overflow-hidden">
           <!-- * header -->
           <div
             class="flex justify-between items-center pt-[16px] pr-[8px] pb-[8px] pl-[12px] w-full"
@@ -1174,7 +1179,6 @@
             </div>
           </div>
         </div>
-
         <!-- ? main -->
         <div class="relative bg-[#19191E] h-full overflow-hidden">
           <div
@@ -3205,10 +3209,11 @@
             </div>
           </div>
         </div>
-
         <!-- ? playing view -->
-        <div class="bg-[#11111B] h-full overflow-hidden">
-          <div class="custom-scroll h-full max-h-full overflow-y-auto">
+        <div class="bg-[#11111B] min-w-[260px] h-full overflow-hidden">
+          <div
+            class="custom-scroll h-full max-h-full overflow-x-hidden overflow-y-auto"
+          >
             <!--  *sticky view -->
             <div class="top-0 z-[49] sticky bg-[#11111B] px-[16px] py-[16px]">
               <div class="flex justify-between items-center">
@@ -3379,7 +3384,7 @@
               <!-- * about -->
               <div
                 id="about-view"
-                class="bg-[#1E1E2E] p-4 rounded-lg min-w-[240px] cursor-pointer"
+                class="bg-[#1E1E2E] p-4 rounded-lg cursor-pointer"
               >
                 <div class="relative">
                   <img
@@ -3430,7 +3435,7 @@
                 </div>
               </div>
               <!-- * credits -->
-              <div class="bg-[#1E1E2E] p-4 rounded-lg min-w-[240px]">
+              <div class="bg-[#1E1E2E] p-4 rounded-lg">
                 <div class="space-y-3">
                   <!-- * credits -->
                   <div class="flex justify-between items-center">
@@ -3733,6 +3738,7 @@
       </div>
     </aside>
 
+    <footer class="bg-red-300 w-full min-w-[620px] h-[72px]"></footer>
     <!-- ? JS -->
     <script src="../JS/search-input.js"></script>
     <script src="../JS/description.js"></script>
