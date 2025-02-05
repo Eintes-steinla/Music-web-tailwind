@@ -3141,7 +3141,7 @@
             </div>
 
             <!-- * About -->
-            <div id="About" class="mt-4 mb-4 px-4">
+            <div id="about" class="mt-4 mb-4 px-4">
               <div class="pb-[12px]">
                 <h2 class="font-[SpotifyMixUITitleBold] text-[#CDD6F4] text-xl">
                   About
@@ -3207,7 +3207,7 @@
       </div>
     </section>
 
-    <aside>
+    <aside id="about-des" class="hidden">
       <!-- * about description -->
       <div
         class="top-[100px] left-1/2 z-50 absolute bg-black rounded-xl w-[55vw] min-w-[500px] -translate-x-1/2"
@@ -3223,7 +3223,10 @@
           </div>
         </div>
         <!-- * x -->
-        <div class="top-0 right-0 absolute -translate-x-5 translate-y-5">
+        <div
+          id="x-about"
+          class="top-0 right-0 absolute -translate-x-5 translate-y-5"
+        >
           <button class="p-2 rounded-full cursor-pointer">
             <svg
               xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -3462,5 +3465,6 @@
     <script src="../JS/add-to-playlist.js"></script>
     <script src="../JS/see-more.js"></script>
     <script src="../JS/carousel.js"></script>
+    <script src="../JS/x-about.js"></script>
   </body>
 </html>
