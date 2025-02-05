@@ -3156,12 +3156,12 @@
               </div>
               <div>
                 <button
-                  class="relative rounded hover:scale-101 transition-all duration-600 ease-in-out"
+                  class="relative bg-transparent rounded-lg hover:scale-101 transition-all duration-600 ease-in-out"
                 >
                   <img
                     src="../public/assets/main/artist/about.jpg"
                     alt="about"
-                    class="opacity-70 rounded w-full"
+                    class="opacity-70 rounded-lg w-full"
                   />
                   <!-- * description about -->
                   <div
@@ -3493,7 +3493,8 @@
     >
       <!-- * about description -->
       <div
-        class="bg-black custom-scroll rounded-xl w-[55vw] min-w-[500px] h-[400px] max-h-[400px] overflow-y-auto"
+        id="hideAbout"
+        class="bg-black custom-scroll rounded-xl w-[55vw] min-w-[500px] h-[70vh] overflow-y-auto"
       >
         <!-- * img -->
         <div class="flex justify-center">
@@ -3738,7 +3739,9 @@
       </div>
     </aside>
 
-    <footer class="bg-red-300 w-full min-w-[620px] h-[72px]"></footer>
+    <footer class="bg-[#1E1E2E] w-full min-w-[620px] h-[72px]">
+      <div class="grid grid-cols"></div>
+    </footer>
     <!-- ? JS -->
     <script src="../JS/search-input.js"></script>
     <script src="../JS/description.js"></script>
@@ -3751,5 +3754,6 @@
     <script src="../JS/see-more.js"></script>
     <script src="../JS/carousel.js"></script>
     <script src="../JS/x-about.js"></script>
+    <script src="../JS/hide-about.js"></script>
   </body>
 </html>
