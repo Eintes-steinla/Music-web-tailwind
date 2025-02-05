@@ -26,3 +26,5 @@ ngăn phần tử co lại flex-shirk-0
 group-hover:translate-y-[-5px] group-hover:opacity-100
 
 truncate
+
+<span class="text-white hover:underline cursor-pointer"></span>
