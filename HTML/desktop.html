@@ -53,10 +53,10 @@
     />
     <title>Spotify</title>
   </head>
-  <body class="w-full">
+  <body class="bg-[#1E1E2E] w-full">
     <header class="items-center w-full h-[64px]">
       <nav
-        class="flex justify-between items-center bg-gray-800 px-[8px] w-full h-full"
+        class="flex justify-between items-center bg-[#000000] px-[8px] w-full h-full"
       >
         <!-- * logo -->
         <a href="#">
@@ -89,7 +89,9 @@
         <!-- * form -->
         <div class="flex items-center gap-2">
           <!-- * home -->
-          <div class="group relative bg-gray-700 rounded-full h-[30px]">
+          <div
+            class="group relative bg-[#212132] hover:bg-[#2f2f48] rounded-full h-[30px]"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -115,7 +117,7 @@
 
           <form
             role="search"
-            class="flex items-center bg-gray-700 hover:bg-gray-600 rounded-full w-[300px] h-[30px] transition-all duration-600"
+            class="flex items-center bg-[#212132] hover:bg-[#2f2f48] rounded-full w-[300px] h-[30px] transition-all duration-600"
           >
             <!-- * search -->
             <div class="relative">
@@ -171,7 +173,7 @@
 
         <div class="flex items-center gap-2">
           <!-- * noti -->
-          <div class="group relative bg-gray-700 rounded-full h-[30px]">
+          <div class="group relative rounded-full h-[30px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -197,7 +199,7 @@
 
           <!-- * user -->
           <div
-            class="group relative flex flex-col items-center bg-gray-700 rounded-full w-[30px] h-[30px]"
+            class="group relative flex flex-col items-center bg-[#1E1E2E] rounded-full w-[30px] h-[30px]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -220,10 +222,10 @@
       </nav>
     </header>
 
-    <section class="bg-gray-800 w-full h-[450px]">
+    <section class="bg-[#1E1E2E] w-full h-[450px]">
       <div class="gap-2 grid grid-cols-[1fr_2fr_1fr] px-[8px] w-full h-full">
         <!-- ? aside -->
-        <div class="bg-gray-900 h-full overflow-hidden">
+        <div class="bg-[#11111B] h-full overflow-hidden">
           <!-- * header -->
           <div
             class="flex justify-between items-center pt-[16px] pr-[8px] pb-[8px] pl-[12px] w-full"
@@ -3203,7 +3205,10 @@
           </div>
         </div>
 
-        <div class="bg-green-700 h-full"></div>
+        <!-- ? playing view -->
+        <div class="bg-[#11111B] h-full">
+          <div></div>
+        </div>
       </div>
     </section>
 
