@@ -53,6 +53,7 @@
     />
     <title>Spotify</title>
   </head>
+
   <body class="bg-[#1E1E2E] w-full">
     <header class="items-center w-full h-[64px]">
       <nav
@@ -3206,8 +3207,218 @@
         </div>
 
         <!-- ? playing view -->
-        <div class="bg-[#11111B] h-full">
-          <div></div>
+        <div class="bg-[#11111B] h-full overflow-hidden">
+          <div class="custom-scroll h-full max-h-full overflow-y-auto">
+            <!--  *sticky view -->
+            <div class="top-0 sticky bg-[#11111B] px-[16px] py-[16px]">
+              <div class="flex justify-between items-center">
+                <div>
+                  <h1
+                    class="font-[SpotifyMixUITitleBold] text-[#CDD6F4] text-md hover:underline cursor-pointer"
+                  >
+                    XXXTENTACION
+                  </h1>
+                </div>
+                <div>
+                  <div class="flex items-center">
+                    <button
+                      class="group ml-2 p-2 rounded-full cursor-pointer need-description"
+                    >
+                      <svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="group-hover:scale-105 group-active:scale-95"
+                        viewBox="0 0 16 16"
+                        width="16"
+                        height="16"
+                      >
+                        <path
+                          d="M3 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM16 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
+                          fill-opacity="0.7"
+                          fill="#CDD6F4"
+                        ></path>
+                      </svg>
+                      <span
+                        class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[-50px] ml-[-130px] px-[5px] py-[3px] rounded text-nowrap text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
+                        >More options for Look At Me!</span
+                      >
+                    </button>
+                    <button
+                      class="group hover:bg-[#292932] ml-2 p-2 rounded-full cursor-pointer need-description"
+                    >
+                      <svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="group-hover:scale-105 group-active:scale-95"
+                        viewBox="0 0 16 16"
+                        width="16"
+                        height="16"
+                      >
+                        <path
+                          d="M2.47 2.47a.75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06Z"
+                          fill-opacity="0.7"
+                          fill="#CDD6F4"
+                        ></path>
+                      </svg>
+
+                      <span
+                        class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[-50px] ml-[-23px] px-[5px] py-[3px] rounded text-nowrap text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
+                        >Close</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- * look at me -->
+            <div class="space-y-4 px-[16px]">
+              <!-- * img -->
+              <div>
+                <img
+                  src="../public/assets/aside/XXXTENTACION/lookatme.jpg"
+                  alt="look at me!"
+                  class="rounded-lg w-full"
+                />
+              </div>
+              <!-- * des img -->
+              <div class="flex justify-between items-center">
+                <div class="flex flex-col">
+                  <a
+                    href="#"
+                    class="font-[SpotifyMixUITitleBold] text-2xl text-white hover:underline"
+                    >Look At Me!</a
+                  >
+                  <div
+                    href="#"
+                    class="text-[#A7A7A7] hover:text-white hover:underline uppercase leading-none"
+                  >
+                    XXXTENTACION
+                  </div>
+                  a>
+                </div>
+                <!-- * svg -->
+                <div class="flex items-center gap-3">
+                  <div class="cursor-pointer">
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      data-encore-id="icon"
+                      role="img"
+                      aria-hidden="true"
+                      class="group hover:scale-105 active:scale-95"
+                      viewBox="0 0 16 16"
+                      width="16"
+                      height="16"
+                    >
+                      <path
+                        d="M1 5.75A.75.75 0 0 1 1.75 5H4v1.5H2.5v8h11v-8H12V5h2.25a.75.75 0 0 1 .75.75v9.5a.75.75 0 0 1-.75.75H1.75a.75.75 0 0 1-.75-.75v-9.5z"
+                        fill-opacity="1"
+                        fill="#CDD6F4"
+                        class="group-hover:fill-white"
+                      ></path>
+                      <path
+                        d="M8 9.576a.75.75 0 0 0 .75-.75V2.903l1.454 1.454a.75.75 0 0 0 1.06-1.06L8 .03 4.735 3.296a.75.75 0 0 0 1.06 1.061L7.25 2.903v5.923c0 .414.336.75.75.75z"
+                        fill-opacity="1"
+                        fill="#CDD6F4"
+                        class="group-hover:fill-white"
+                      ></path>
+                    </svg>
+                  </div>
+                  <!-- * add to playlist -->
+                  <div
+                    class="relative add-to-playlist py-2 cursor-pointer need-description"
+                  >
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      data-encore-id="icon"
+                      role="img"
+                      aria-hidden="true"
+                      class="active:scale-95 hover:scale-105 transition-all duration-200 ease-in-out"
+                      viewBox="0 0 16 16"
+                      width="16"
+                      height="16"
+                    >
+                      <path
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm11.748-1.97a.75.75 0 0 0-1.06-1.06l-4.47 4.47-1.405-1.406a.75.75 0 1 0-1.061 1.06l2.466 2.467 5.53-5.53z"
+                        fill="#1ED78B"
+                      ></path>
+                    </svg>
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      data-encore-id="icon"
+                      role="img"
+                      aria-hidden="true"
+                      class="hidden active:scale-95 hover:scale-105 transition-all duration-200 ease-in-out"
+                      viewBox="0 0 24 24"
+                      width="16"
+                      height="16"
+                    >
+                      <path
+                        d="M11.999 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm-11 9c0-6.075 4.925-11 11-11s11 4.925 11 11-4.925 11-11 11-11-4.925-11-11z"
+                        fill="#CDD6F4"
+                      ></path>
+                      <path
+                        d="M17.999 12a1 1 0 0 1-1 1h-4v4a1 1 0 1 1-2 0v-4h-4a1 1 0 1 1 0-2h4V7a1 1 0 1 1 2 0v4h4a1 1 0 0 1 1 1z"
+                        fill="#CDD6F4"
+                      ></path>
+                    </svg>
+                    <span
+                      class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[-55px] ml-[-80px] px-[5px] py-[3px] rounded text-nowrap text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
+                      >Add to playlist</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- * about -->
+              <div class="bg-[#1E1E2E] p-4 rounded-lg">
+                <div>
+                  <img
+                    src="../public/assets/main/artist/about.jpg"
+                    alt="about"
+                    class="rounded-t-md w-full"
+                  />
+                </div>
+                <div>
+                  <div>
+                    <span
+                      class="font-[SpotifyMixUITitleBold] text-md text-white hover:underline"
+                      >XXXTENTACION</span
+                    >
+                  </div>
+                  <div class="flex items-center">
+                    <span class="text-[#A7A7A7] text-sm"
+                      >38,002,758 Monthly Listeners</span
+                    >
+                    <button>
+                      <span
+                        class="font-[SpotifyMixUIBold] text-[#CDD6F4] text-sm"
+                        >Unfollow</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="text-[#A7A7A7] truncate">
+                  <p class="line-clamp-3 text-sm">
+                    Controversial rapper Jahseh Dwayne Onfroy (aka XXXTentacion)
+                    played fast and loose when it came to genres, often
+                    incorporating elements of punk rock, hip-hop, R&B, and heavy
+                    metal. In the late 2010s, he experienced a quick rise with
+                    his dark and emotionally intense content, scoring a number
+                    one album with 2018's ?. Months later, at the peak of his
+                    popularity, he was shot and killed.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
