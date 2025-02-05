@@ -291,7 +291,7 @@
 
               <div
                 id="plus-windows"
-                class="absolute hidden bg-gray-800 rounded text-gray-300 text-sm translate-x-[-175px] translate-y-[10px]"
+                class="absolute hidden bg-[#1E1E2E] rounded text-gray-300 text-sm translate-x-[-175px] translate-y-[10px]"
               >
                 <ul class="p-[4px]">
                   <li>
@@ -400,7 +400,7 @@
                   </g>
                 </svg>
                 <span
-                  class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[-60px] p-[3px] pt-[1px] rounded text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
+                  class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[-60px] p-[3px] rounded text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
                   >Search in Your Library</span
                 >
               </div>
@@ -432,7 +432,7 @@
                   placeholder="Search in Your Library"
                   maxlength="80"
                   id="input-2"
-                  class="relative pb-[2px] pl-[2px] w-full text-gray-100 text-xs focus:outline-none"
+                  class="relative pl-[2px] w-full text-gray-100 text-xs focus:outline-none"
                 />
                 <svg
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -3210,7 +3210,7 @@
         <div class="bg-[#11111B] h-full overflow-hidden">
           <div class="custom-scroll h-full max-h-full overflow-y-auto">
             <!--  *sticky view -->
-            <div class="top-0 sticky bg-[#11111B] px-[16px] py-[16px]">
+            <div class="top-0 z-[49] sticky bg-[#11111B] px-[16px] py-[16px]">
               <div class="flex justify-between items-center">
                 <div>
                   <h1
@@ -3242,7 +3242,7 @@
                         ></path>
                       </svg>
                       <span
-                        class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[-50px] ml-[-130px] px-[5px] py-[3px] rounded text-nowrap text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
+                        class="absolute hidden bg-gray-700 opacity-0 mt-[-40px] ml-[-130px] px-[5px] py-[3px] rounded text-nowrap text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
                         >More options for Look At Me!</span
                       >
                     </button>
@@ -3268,7 +3268,7 @@
                       </svg>
 
                       <span
-                        class="z-50 absolute hidden bg-gray-700 opacity-0 mt-[-50px] ml-[-23px] px-[5px] py-[3px] rounded text-nowrap text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
+                        class="absolute hidden bg-gray-700 opacity-0 mt-[-40px] ml-[-23px] px-[5px] py-[3px] rounded text-nowrap text-sm text-white transform transition-all translate-y-2 duration-500 description ease-in-out"
                         >Close</span
                       >
                     </button>
@@ -3277,7 +3277,7 @@
               </div>
             </div>
             <!-- * look at me -->
-            <div class="space-y-4 px-[16px]">
+            <div class="space-y-4 px-[16px] pb-[16px]">
               <!-- * img -->
               <div>
                 <img
@@ -3291,16 +3291,15 @@
                 <div class="flex flex-col">
                   <a
                     href="#"
-                    class="font-[SpotifyMixUITitleBold] text-2xl text-white hover:underline"
+                    class="font-[SpotifyMixUITitleBold] text-2xl text-nowrap text-white hover:underline"
                     >Look At Me!</a
                   >
-                  <div
+                  <a
                     href="#"
-                    class="text-[#A7A7A7] hover:text-white hover:underline uppercase leading-none"
+                    class="text-[#A7A7A7] hover:text-white hover:underline uppercase leading-none cursor-pointer"
                   >
                     XXXTENTACION
-                  </div>
-                  a>
+                  </a>
                 </div>
                 <!-- * svg -->
                 <div class="flex items-center gap-3">
@@ -3378,18 +3377,27 @@
                 </div>
               </div>
               <!-- * about -->
-              <div class="bg-[#1E1E2E] p-4 rounded-lg">
-                <div>
+              <div
+                id="about-view"
+                class="bg-[#1E1E2E] p-4 rounded-lg min-w-[240px] cursor-pointer"
+              >
+                <div class="relative">
                   <img
                     src="../public/assets/main/artist/about.jpg"
                     alt="about"
-                    class="rounded-t-md w-full"
+                    class="opacity-80 rounded-t-md w-full"
                   />
+                  <div
+                    class="top-0 left-0 absolute p-4 w-full font-[SpotifyMixUIBold] text-[#CDD6F4] text-nowrap"
+                  >
+                    About the artist
+                  </div>
                 </div>
-                <div>
+                <!-- * about title -->
+                <div class="space-y-2 p-4">
                   <div>
                     <span
-                      class="font-[SpotifyMixUITitleBold] text-md text-white hover:underline"
+                      class="font-[SpotifyMixUITitleBold] text-md text-white hover:underline cursor-pointer"
                       >XXXTENTACION</span
                     >
                   </div>
@@ -3397,24 +3405,75 @@
                     <span class="text-[#A7A7A7] text-sm"
                       >38,002,758 Monthly Listeners</span
                     >
-                    <button>
+                    <button
+                      id="follow-button-about"
+                      class="border-[#A7A7A7] border-1 hover:border-white px-4 rounded-full hover:scale-105 active:scale-95 py-1 cursor-pointer"
+                    >
                       <span
-                        class="font-[SpotifyMixUIBold] text-[#CDD6F4] text-sm"
+                        class="font-[SpotifyMixUIBold] text-[#CDD6F4] text-xs"
                         >Unfollow</span
                       >
                     </button>
                   </div>
+                  <div class="text-[#A7A7A7] truncate">
+                    <p class="line-clamp-3 text-sm text-wrap">
+                      Controversial rapper Jahseh Dwayne Onfroy (aka
+                      XXXTentacion) played fast and loose when it came to
+                      genres, often incorporating elements of punk rock,
+                      hip-hop, R&B, and heavy metal. In the late 2010s, he
+                      experienced a quick rise with his dark and emotionally
+                      intense content, scoring a number one album with 2018's ?.
+                      Months later, at the peak of his popularity, he was shot
+                      and killed.
+                    </p>
+                  </div>
                 </div>
-                <div class="text-[#A7A7A7] truncate">
-                  <p class="line-clamp-3 text-sm">
-                    Controversial rapper Jahseh Dwayne Onfroy (aka XXXTentacion)
-                    played fast and loose when it came to genres, often
-                    incorporating elements of punk rock, hip-hop, R&B, and heavy
-                    metal. In the late 2010s, he experienced a quick rise with
-                    his dark and emotionally intense content, scoring a number
-                    one album with 2018's ?. Months later, at the peak of his
-                    popularity, he was shot and killed.
-                  </p>
+              </div>
+              <!-- * credits -->
+              <div class="bg-[#1E1E2E] p-4 rounded-lg min-w-[240px]">
+                <div class="space-y-3">
+                  <!-- * credits -->
+                  <div class="flex justify-between items-center">
+                    <div class="font-[SpotifyMixUIBold] text-[#CDD6F4] text-md">
+                      Credits
+                    </div>
+                    <button
+                      class="cursor-pointer hover:scale-105 active:scale-95"
+                    >
+                      <span
+                        class="font-[SpotifyMixUIBold] text-[#a7a7a7] text-sm hover:text-[#cdd6f4] active:text-[#a7a7a7] hover:underline"
+                        >Show all</span
+                      >
+                    </button>
+                  </div>
+                  <!-- * follow -->
+                  <div>
+                    <div class="flex justify-between items-center">
+                      <div class="flex flex-col">
+                        <span class="text-white hover:underline cursor-pointer"
+                          >XXXTENTACION</span
+                        >
+                        <span class="text-[#a7a7a7] text-sm">Main Artist</span>
+                      </div>
+                      <button
+                        id="follow-button-credits"
+                        class="border-[#A7A7A7] border-1 hover:border-white px-4 rounded-full hover:scale-105 active:scale-95 py-1 cursor-pointer"
+                      >
+                        <span
+                          class="font-[SpotifyMixUIBold] text-[#CDD6F4] text-xs"
+                          >Unfollow</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="text-[#CDD6F4]">Jimmy Duval</div>
+                    <div class="text-[#a7a7a7] text-sm">Producer</div>
+                  </div>
+                  <div>
+                    <div class="text-[#CDD6F4]">Cristian Rojas</div>
+                    <div class="text-[#a7a7a7] text-sm">Producer</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -3425,7 +3484,7 @@
 
     <aside
       id="about-des"
-      class="top-[100px] left-1/2 z-50 absolute hidden opacity-0 transition-all -translate-x-1/2 duration-300 overflow-hidden ease-in-out"
+      class="top-[100px] left-1/2 z-[999] absolute hidden opacity-0 transition-all -translate-x-1/2 duration-300 overflow-hidden ease-in-out"
     >
       <!-- * about description -->
       <div

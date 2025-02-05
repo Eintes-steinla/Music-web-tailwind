@@ -1,6 +1,15 @@
 const about = document.getElementById("about");
+const aboutView = document.getElementById("about-view");
 const aboutDes = document.getElementById("about-des");
 const xAbout = document.getElementById("x-about");
+
+aboutView.addEventListener("click", (e) => {
+  aboutDes.classList.remove("hidden"); // Hiện lên
+  setTimeout(() => {
+    aboutDes.classList.remove("opacity-0");
+  }, 10); // Delay nhẹ để Tailwind kịp nhận class
+  e.stopPropagation();
+});
 
 about.addEventListener("click", (e) => {
   aboutDes.classList.remove("hidden"); // Hiện lên
