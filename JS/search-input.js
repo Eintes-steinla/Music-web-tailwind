@@ -3,7 +3,7 @@ const searchInput = document.getElementById("search-input");
 const searchRecents = document.getElementById("search-recents");
 
 function showInput() {
-  // searchRecents.classList.add("hidden");
+  searchRecents.classList.add("hidden");
 
   searchIcon.classList.add("hidden");
   searchInput.classList.remove("hidden", "opacity-0");
