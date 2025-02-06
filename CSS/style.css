@@ -56,3 +56,57 @@ body {
   opacity: 1;
   transform: translateY(-5px);
 }
+
+/* * play progress */
+#play-progress {
+  appearance: none;
+  width: 266px;
+  min-width: 266px;
+  height: 4px;
+  background: linear-gradient(to right, white 0%, gray 0%);
+  border-radius: 9999px;
+  outline: none;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+/* Ẩn nút kéo mặc định */
+#play-progress::-webkit-slider-thumb {
+  appearance: none;
+  width: 0;
+  height: 0;
+}
+
+#play-progress::-moz-range-thumb {
+  width: 0;
+  height: 0;
+}
+
+/* Khi hover, active hoặc đang kéo: nền xanh lá, hiện lại nút kéo */
+#play-progress:hover,
+#play-progress:active,
+#play-progress.dragging {
+  background: linear-gradient(to right, lime 0%, gray 0%);
+}
+
+/* hiện nút kéo */
+#play-progress:hover::-webkit-slider-thumb,
+#play-progress:active::-webkit-slider-thumb,
+#play-progress.dragging::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#play-progress:hover::-moz-range-thumb,
+#play-progress:active::-moz-range-thumb,
+#play-progress.dragging::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
