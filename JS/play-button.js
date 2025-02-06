@@ -17,3 +17,18 @@ document.querySelectorAll(".play-button-bg").forEach((button) => {
     }
   });
 });
+
+// space play song
+document.addEventListener("keydown", function (event) {
+  if (event.code === "Space") {
+    event.preventDefault(); // Ngăn cuộn trang khi bấm Space
+
+    let audioSpace = document.getElementById("audio-song");
+
+    if (audioSpace.paused) {
+      audioSpace.play();
+    } else {
+      audioSpace.pause();
+    }
+  }
+});
