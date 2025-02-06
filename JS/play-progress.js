@@ -54,7 +54,7 @@ audio.addEventListener("ended", () => {
   isPlaying = false;
   progressBar.value = 0;
   playTime.textContent = "0:00";
-  syncCheckboxes(false); // Uncheck tất cả khi nhạc kết thúc
+  syncCheckboxes(true); // Giữ trạng thái đã check khi nhạc kết thúc
   updateProgressBar();
 });
 
@@ -74,8 +74,49 @@ progressBar.addEventListener("change", () => {
 // Cập nhật màu nền thanh trượt theo tiến trình
 function updateProgressBar() {
   const value = (progressBar.value / progressBar.max) * 100;
-  progressBar.style.background = `linear-gradient(to right, lime ${value}%, gray ${value}%)`;
+  const isHovered = progressBar.classList.contains("hovered");
+  const isDragging = progressBar.classList.contains("dragging");
+
+  // Nếu đang hover hoặc kéo, nền xanh, còn không thì nền trắng
+  const color = isHovered || isDragging ? "#1DB954" : "white";
+
+  progressBar.style.background = `linear-gradient(to right, ${color} ${value}%, gray ${value}%)`;
 }
+
+// Khi hover vào, đổi nền xanh
+progressBar.addEventListener("mouseenter", function () {
+  this.classList.add("hovered");
+  updateProgressBar();
+});
+
+// Khi rời chuột, nếu không kéo thì quay lại nền trắng
+progressBar.addEventListener("mouseleave", function () {
+  this.classList.remove("hovered");
+  if (!this.classList.contains("dragging")) {
+    updateProgressBar();
+  }
+});
+
+// Khi bắt đầu kéo, giữ nền xanh lá
+progressBar.addEventListener("mousedown", function () {
+  this.classList.add("dragging");
+  updateProgressBar();
+});
+
+// Khi kéo (di chuyển giá trị), giữ nền xanh lá
+progressBar.addEventListener("input", function () {
+  updateProgressBar();
+});
+
+// Khi thả chuột, kiểm tra nếu không hover thì quay lại nền trắng
+document.addEventListener("mouseup", function () {
+  if (progressBar.classList.contains("dragging")) {
+    progressBar.classList.remove("dragging");
+    if (!progressBar.classList.contains("hovered")) {
+      updateProgressBar();
+    }
+  }
+});
 
 // Đặt màu nền ban đầu
 updateProgressBar();
