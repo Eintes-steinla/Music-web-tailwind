@@ -1,51 +1,8 @@
-const progressBar = document.getElementById("play-progress");
-
-// Hàm cập nhật màu nền dựa trên giá trị hiện tại
-function updateBackground(color) {
-  const value = (progressBar.value / progressBar.max) * 100;
-  progressBar.style.background = `linear-gradient(to right, ${color} ${value}%, gray ${value}%)`;
-}
-
-// Khi hover, đổi nền thành xanh lá
-progressBar.addEventListener("mouseenter", function () {
-  this.classList.add("hovered");
-  updateBackground("lime");
-});
-
-// Khi rời chuột, nếu không kéo thì quay lại nền trắng
-progressBar.addEventListener("mouseleave", function () {
-  this.classList.remove("hovered");
-  if (!this.classList.contains("dragging")) {
-    updateBackground("white");
-  }
-});
-
-// Khi bắt đầu kéo, giữ nền xanh lá
-progressBar.addEventListener("mousedown", function () {
-  this.classList.add("dragging");
-  updateBackground("lime");
-});
-
-// Khi kéo (di chuyển giá trị), giữ nền xanh lá
-progressBar.addEventListener("input", function () {
-  updateBackground("lime");
-});
-
-// Khi thả chuột, kiểm tra nếu không hover thì quay lại nền trắng
-document.addEventListener("mouseup", function () {
-  if (progressBar.classList.contains("dragging")) {
-    progressBar.classList.remove("dragging");
-    if (!progressBar.classList.contains("hovered")) {
-      updateBackground("white");
-    }
-  }
-});
-
-// ! ------------
 const audio = document.getElementById("audio-song");
-// const progressBar = document.getElementById("play-progress");
+const progressBar = document.getElementById("play-progress");
 const playTime = document.getElementById("play-time");
-const playButtons = document.querySelectorAll(".play-button-bg-song");
+const playButtons = document.querySelectorAll(".play-button-bg-song"); // Nút nền
+const playCheckboxes = document.querySelectorAll(".play-button-song input"); // Checkbox
 
 let isPlaying = false;
 let isDragging = false;
@@ -57,26 +14,31 @@ function formatTime(seconds) {
   return `${min}:${sec < 10 ? "0" : ""}${sec}`;
 }
 
-// Khi bấm bất kỳ nút play nào
-playButtons.forEach((button) => {
+// Khi bấm vào nút nền (play-button-bg-song)
+playButtons.forEach((button, index) => {
   button.addEventListener("click", () => {
-    if (isPlaying) {
+    const checkbox = playCheckboxes[index]; // Lấy checkbox bên trong nút
+
+    if (!checkbox.checked) {
+      checkbox.checked = true; // Check → Tắt nhạc
       audio.pause();
-      updateAllButtons("Play");
+      isPlaying = false;
     } else {
+      checkbox.checked = false; // Uncheck → Phát nhạc
       audio.play();
-      updateAllButtons("Pause");
+      isPlaying = true;
     }
-    isPlaying = !isPlaying;
+
+    syncCheckboxes(checkbox.checked);
   });
 });
 
-// // Cập nhật trạng thái của tất cả các nút
-// function updateAllButtons(text) {
-//   playButtons.forEach((button) => {
-//     button.textContent = text;
-//   });
-// }
+// Đồng bộ trạng thái của tất cả các checkbox
+function syncCheckboxes(state) {
+  playCheckboxes.forEach((checkbox) => {
+    checkbox.checked = state;
+  });
+}
 
 // Cập nhật thanh trượt và thời gian khi nhạc chạy
 audio.addEventListener("timeupdate", () => {
@@ -90,9 +52,9 @@ audio.addEventListener("timeupdate", () => {
 // Khi nhạc kết thúc
 audio.addEventListener("ended", () => {
   isPlaying = false;
-  updateAllButtons("Play");
   progressBar.value = 0;
   playTime.textContent = "0:00";
+  syncCheckboxes(false); // Uncheck tất cả khi nhạc kết thúc
   updateProgressBar();
 });
 

@@ -61,7 +61,7 @@ body {
 #play-progress {
   appearance: none;
   width: 266px;
-  min-width: 266px;
+  /* min-width: 100px; */
   height: 4px;
   background: linear-gradient(to right, white 0%, gray 0%);
   border-radius: 9999px;
