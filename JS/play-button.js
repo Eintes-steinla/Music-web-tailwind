@@ -20,7 +20,6 @@ function toggleCheckbox() {
   });
 }
 
-// Gọi hàm khi cần thiết
 toggleCheckbox();
 
 // space play song
