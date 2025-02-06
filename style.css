@@ -1,31 +1,30 @@
 @font-face {
   font-family: "SpotifyMixUI";
-  src: url("../public/fonts/SpotifyMixUI-Regular.ttf") format("truetype");
+  src: url("./public/fonts/SpotifyMixUI-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "SpotifyMixUIBold";
-  src: url("../public/fonts/SpotifyMixUI-Bold.ttf") format("truetype");
+  src: url("./public/fonts/SpotifyMixUI-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "SpotifyMixUITitleBold";
-  src: url("../public/fonts/SpotifyMixUI-Title-Bold.ttf") format("truetype");
+  src: url("./public/fonts/SpotifyMixUI-Title-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "SpotifyMixUITitleExtrabold";
-  src: url("../public/fonts/SpotifyMixUI-Title-Extrabold.ttf")
-    format("truetype");
+  src: url("./public/fonts/SpotifyMixUI-Title-Extrabold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "SpotifyMixUIVariable";
-  src: url("../public/fonts/SpotifyMixUI-Title-Variable.ttf") format("truetype");
+  src: url("./public/fonts/SpotifyMixUI-Title-Variable.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
