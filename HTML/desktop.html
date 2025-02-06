@@ -1253,8 +1253,8 @@
               class="top-0 left-0 z-40 absolute hidden bg-[#212121] opacity-0 px-4 py-2 w-full transition-all duration-300 ease-in-out"
             >
               <div class="flex items-center gap-2">
-                <div
-                  class="active:scale-95 flex justify-center items-center bg-[#1ED760] hover:bg-[#3BE377] rounded-full w-[48px] min-w-[48px] h-[48px] transform play-button-bg hover:scale-105 cursor-pointer"
+                <button
+                  class="active:scale-95 flex justify-center items-center bg-[#1ED760] play-button-bg-song hover:bg-[#3BE377] rounded-full w-[48px] min-w-[48px] h-[48px] transform play-button-bg hover:scale-105 cursor-pointer"
                 >
                   <!-- From Uiverse.io by bbaginuk -->
                   <label class="play-button play-button-song">
@@ -1280,7 +1280,7 @@
                       ></path>
                     </svg>
                   </label>
-                </div>
+                </button>
                 <span
                   class="font-[SpotifyMixUITitleBold] text-2xl text-white cursor-default"
                   >XXXTENTACION</span
@@ -1293,8 +1293,8 @@
             >
               <div class="flex items-center gap-5">
                 <!-- * play -->
-                <div
-                  class="active:scale-95 flex justify-center items-center bg-[#1ED760] hover:bg-[#3BE377] rounded-full w-[56px] min-w-[56px] h-[56px] transform play-button-bg hover:scale-105 cursor-pointer"
+                <button
+                  class="active:scale-95 flex justify-center items-center bg-[#1ED760] play-button-bg-song hover:bg-[#3BE377] rounded-full w-[56px] min-w-[56px] h-[56px] transform play-button-bg hover:scale-105 cursor-pointer"
                 >
                   <!-- From Uiverse.io by bbaginuk -->
                   <label class="play-button play-button-song">
@@ -1320,7 +1320,7 @@
                       ></path>
                     </svg>
                   </label>
-                </div>
+                </button>
                 <!-- * Following -->
                 <div>
                   <button
@@ -3863,7 +3863,7 @@
               </button>
               <!-- * play -->
               <button
-                class="relative bg-white p-4 rounded-full cursor-pointer play-button-bg hover:scale-105 active:scale-95"
+                class="relative bg-white play-button-bg-song p-4 rounded-full cursor-pointer play-button-bg hover:scale-105 active:scale-95"
               >
                 <!-- From Uiverse.io by bbaginuk -->
                 <label class="play-button play-button-song">
@@ -3937,21 +3937,30 @@
             </div>
             <!-- * label ranger -->
             <div>
-              <div class="flex justify-center items-end w-full">
-                <div></div>
+              <div class="flex justify-center items-end gap-2 w-full">
+                <div
+                  id="play-time"
+                  class="text-right w-[30px] text-[#999FB9] text-xs"
+                >
+                  0:00
+                </div>
                 <div>
                   <label class="h-fit">
+                    <audio
+                      id="audio-song"
+                      src="../public/songs/spotifydown.com - Look At Me! - XXXTENTACION.mp3"
+                    ></audio>
                     <input
                       id="play-progress"
                       type="range"
                       min="0"
-                      max="126393"
-                      step="5000"
+                      max="126"
+                      step="1"
                       value="0"
                     />
                   </label>
                 </div>
-                <div></div>
+                <div class="w-[30px] text-[#999FB9] text-xs">2:06</div>
               </div>
             </div>
           </div>
