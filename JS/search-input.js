@@ -9,12 +9,14 @@ function showInput() {
   searchInput.classList.remove("hidden", "opacity-0");
   requestAnimationFrame(() => {
     searchInput.classList.add("w-[180px]");
+    searchInput.classList.remove("w-[2px]");
   });
 }
 
 function hideInput() {
   searchRecents.classList.remove("hidden");
 
+  searchInput.classList.add("w-[2px]");
   searchInput.classList.remove("w-[180px]");
   setTimeout(() => {
     searchInput.classList.add("opacity-100");
