@@ -4044,6 +4044,7 @@
             <div class="w-[45%] min-w-[100px]">
               <div class="flex items-center">
                 <button
+                  id="volume-btn"
                   class="group p-2 rounded-full cursor-pointer hover:scale-105 active:scale-95"
                 >
                   <!-- * unmute -->
@@ -4054,8 +4055,8 @@
                     role="presentation"
                     aria-label="Volume high"
                     aria-hidden="false"
-                    class="group-focus:hidden group-active:hidden"
-                    id="volume-icon"
+                    id="unmute"
+                    class=""
                     viewBox="0 0 16 16"
                     width="16"
                     height="16"
@@ -4079,8 +4080,8 @@
                     role="presentation"
                     aria-label="Volume off"
                     aria-hidden="false"
-                    class="group-focus:block group-active:block hidden"
-                    id="volume-icon"
+                    id="mute"
+                    class="hidden"
                     viewBox="0 0 16 16"
                     width="16"
                     height="16"
@@ -4097,7 +4098,14 @@
                     ></path>
                   </svg>
                 </button>
-                <input id="volume" type="range" value="0" />
+                <input
+                  id="volume"
+                  class=""
+                  type="range"
+                  value="0"
+                  min="0"
+                  max="100"
+                />
               </div>
             </div>
             <!-- * miniplayer -->
@@ -4169,5 +4177,6 @@
     <script src="../JS/x-about.js"></script>
     <script src="../JS/hide-about.js"></script>
     <script src="../JS/play-progress.js"></script>
+    <script src="../JS/volume.js"></script>
   </body>
 </html>

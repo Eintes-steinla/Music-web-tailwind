@@ -45,6 +45,8 @@ plus #CDD6F4
 fill="#BCBCC1"
 class="group-focus:fill-[#1DB954]"
 
+class="group-focus:hidden group-active:hidden"
+
                         <div
                           class="relative add-to-playlist py-2 cursor-pointer need-description"
                         >
