@@ -54,6 +54,15 @@ playholder.addEventListener("click", () => {
 function updateSpanContent() {
   if (input.offsetWidth === 130) {
     playholder.textContent = "What do you want...";
+  } else {
+    playholder.textContent = "What do you want to play?";
   }
 }
 updateSpanContent();
+// Gọi hàm khi resize cửa sổ
+window.addEventListener("resize", updateSpanContent);
+
+// Dùng ResizeObserver để theo dõi thay đổi kích thước của input
+new ResizeObserver(updateSpanContent).observe(
+  document.getElementById("input-1")
+);
