@@ -54,7 +54,7 @@
   </head>
 
   <body class="bg-[#1E1E2E] custom-scroll w-full">
-    <header class="items-center w-full min-w-[812px] h-[64px]">
+    <header class="items-center w-full sm:min-w-[816px] h-[64px]">
       <nav
         class="flex justify-between items-center bg-[#000000] px-[8px] w-full h-full"
       >
@@ -117,10 +117,10 @@
 
           <form
             role="search"
-            class="flex items-center bg-[#212132] hover:bg-[#2f2f48] rounded-full w-[300px] h-[30px] transition-all duration-600"
+            class="flex sm:justify-start items-center bg-[#212132] hover:bg-[#2f2f48] rounded-full w-[200px] sm:w-[300px] h-[30px] transition-all duration-600"
           >
             <!-- * search -->
-            <div class="relative">
+            <div class="relative min-w-[26px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -143,12 +143,18 @@
                 >Search</span
               >
             </div>
-            <input
-              type="text"
-              id="input-1"
-              placeholder="What do you want to play?"
-              class="pr-[60px] w-[230px] text-sm text-white placeholder:text-[#989FB9] focus:outline-none active:text-white"
-            />
+            <div class="relative flex items-center">
+              <input
+                type="text"
+                id="input-1"
+                class="group pr-[60px] w-full max-w-[130px] sm:max-w-[230px] text-sm text-white active:text-white peer focus:outline-none"
+              />
+              <span
+                id="input-playholder"
+                class="absolute peer-focus:hidden text-[#989FB9] text-sm cursor-pointer"
+                >What do you want to play?</span
+              >
+            </div>
 
             <svg
               xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -156,7 +162,7 @@
               data-encore-id="icon"
               role="img"
               aria-hidden="true"
-              class="hidden cursor-pointer dYnaPI e-9541-icon Svg-sc-ytk21e-0"
+              class="hidden cursor-pointer"
               viewBox="0 0 16 16"
               width="16"
               height="16"
@@ -223,14 +229,16 @@
     </header>
 
     <section
-      class="bg-[#1E1E2E] w-full min-w-[812px]"
+      class="bg-[#1E1E2E] w-full sm:min-w-[816px]"
       style="height: calc(100vh - 64px - 80px)"
     >
       <div
-        class="gap-2 grid grid-cols-[1fr_2fr_1fr] px-[8px] w-full h-full max-h-full"
+        class="gap-2 grid sm:grid-cols-[1fr_2fr_1fr] grid-rows-1 sm:px-[8px] w-full h-full max-h-full"
       >
         <!-- ? aside -->
-        <div class="bg-[#11111B] h-full max-h-full overflow-hidden">
+        <div
+          class="sm:block hidden bg-[#11111B] h-full max-h-full overflow-hidden"
+        >
           <!-- * header -->
           <div
             class="flex justify-between items-center pt-[16px] pr-[8px] pb-[8px] pl-[12px] w-full"
@@ -3394,7 +3402,9 @@
           </div>
         </div>
         <!-- ? playing view -->
-        <div class="bg-[#11111B] min-w-[260px] h-full overflow-hidden">
+        <div
+          class="sm:block hidden bg-[#11111B] min-w-[260px] h-full overflow-hidden"
+        >
           <div
             class="custom-scroll h-full max-h-full overflow-x-hidden overflow-y-auto"
           >
@@ -3923,9 +3933,9 @@
       </div>
     </aside>
 
-    <footer class="bg-[#1E1E2E] px-2 py-4 w-full min-w-[620px] h-[80px]">
-      <div class="grid grid-cols-[1fr_2fr_1fr] w-full">
-        <div class="px-2 h-full max-h-full">
+    <footer class="bg-[#1E1E2E] sm:px-2 py-4 w-full sm:min-w-[620px] h-[80px]">
+      <div class="grid sm:grid-cols-[1fr_2fr_1fr] grid-rows-1 w-full">
+        <div class="sm:block hidden px-2 h-full max-h-full">
           <div class="flex items-center gap-4">
             <!-- * img -->
             <div class="w-[56px] min-w-[56px] h-[56px]">
@@ -4152,7 +4162,7 @@
             </div>
           </div>
         </div>
-        <div class="h-full max-h-full">
+        <div class="sm:block hidden h-full max-h-full">
           <div class="flex justify-end items-center w-full h-full">
             <!-- * playing view -->
             <button

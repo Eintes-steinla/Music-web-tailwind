@@ -4,18 +4,21 @@ const clearBtn = document.getElementById("clear-x-1");
 // Lắng nghe sự kiện focus vào ô input để hiển thị dấu X
 input.addEventListener("focus", () => {
   clearBtn.classList.remove("hidden");
+  playholder.classList.add("hidden");
 });
 
 // Khi nhấn vào dấu X, xóa hết nội dung trong ô input
 clearBtn.addEventListener("click", () => {
   input.value = "";
   clearBtn.classList.add("hidden"); // Ẩn dấu X sau khi xóa chữ
+  playholder.classList.remove("hidden");
 });
 
 // Khi rời khỏi ô input (blur), dấu X sẽ ẩn đi nếu ô input rỗng
 input.addEventListener("blur", () => {
   if (input.value.trim() === "") {
     clearBtn.classList.add("hidden");
+    playholder.classList.remove("hidden");
   }
 });
 
@@ -41,3 +44,16 @@ input1.addEventListener("blur", () => {
     clearBtn1.classList.add("hidden");
   }
 });
+
+const playholder = document.getElementById("input-playholder");
+playholder.addEventListener("click", () => {
+  playholder.classList.add("hidden");
+  input.focus();
+});
+
+function updateSpanContent() {
+  if (input.offsetWidth === 130) {
+    playholder.textContent = "What do you want...";
+  }
+}
+updateSpanContent();
