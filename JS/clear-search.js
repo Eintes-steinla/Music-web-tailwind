@@ -45,6 +45,11 @@ input1.addEventListener("blur", () => {
   }
 });
 
+document.addEventListener("click", (e) => {
+  e.stopPropagation();
+  clearBtn1.classList.add("hidden");
+});
+// * playholder
 const playholder = document.getElementById("input-playholder");
 playholder.addEventListener("click", () => {
   playholder.classList.add("hidden");
