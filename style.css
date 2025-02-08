@@ -164,7 +164,7 @@ body {
 /* * 5 line */
 
 .playing {
-  display: flex;
+  /* display: flex; */
   position: relative;
   justify-content: center;
   gap: 1px;
@@ -174,7 +174,7 @@ body {
 
 .greenline {
   background-color: #1db954;
-  height: 20px;
+  height: 15px;
   width: 2px;
   position: relative;
   transform-origin: bottom;
@@ -292,3 +292,8 @@ body {
     -ms-overflow-style: none;
   }
 }
+/* @media (max-width: 639px) {
+  #five-line-stop {
+    display: none;
+  }
+} */

@@ -63,8 +63,6 @@ function updateMuteState() {
 // Khởi tạo trạng thái ban đầu
 updateMuteState();
 
-// !---
-
 // Cập nhật màu nền thanh trượt theo tiến trình
 function updateVolumeSlider() {
   const value = (volumeSlider.value / volumeSlider.max) * 100;
