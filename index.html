@@ -3963,18 +3963,23 @@
             <!-- * img -->
             <div class="w-[56px] min-w-[56px] h-[56px]">
               <img
+                id="picture-song"
                 src="./public/assets/main/track/xxx.jpg"
                 alt="look at me!"
                 class="rounded"
               />
             </div>
             <!-- * title -->
-            <div>
-              <a href="#" class="text-white text-sm hover:underline"
+            <div class="w-fit">
+              <a
+                href="#"
+                id="title-song"
+                class="text-white text-sm hover:underline text-nowrap"
                 >Look At Me!</a
               >
               <p
-                class="opacity-80 text-[#CDD6F4] hover:text-white text-xs hover:underline cursor-pointer"
+                id="artist-song"
+                class="opacity-80 text-[#CDD6F4] hover:text-white text-xs hover:underline text-nowrap cursor-pointer"
               >
                 XXXTENTACION
               </p>
@@ -4060,6 +4065,7 @@
               </button>
               <!-- * previous -->
               <button
+                id="prev-song"
                 class="p-2 rounded-full hover:scale-105 active:scale-95 cursor-pointer"
               >
                 <svg
@@ -4111,6 +4117,7 @@
               </button>
               <!-- * next -->
               <button
+                id="next-song"
                 class="p-2 rounded-full hover:scale-105 active:scale-95 cursor-pointer"
               >
                 <svg
@@ -4168,7 +4175,7 @@
                   <label class="h-fit">
                     <audio
                       id="audio-song"
-                      src="./public/songs/spotifydown.com - Look At Me! - XXXTENTACION.mp3"
+                      src="./public/songs/look-at-me.mp3"
                     ></audio>
                     <input
                       id="play-progress"
@@ -4399,5 +4406,6 @@
     <script src="./JS/hide-about.js"></script>
     <script src="./JS/play-progress.js"></script>
     <script src="./JS/volume.js"></script>
+    <script src="./JS/next-song.js"></script>
   </body>
 </html>
